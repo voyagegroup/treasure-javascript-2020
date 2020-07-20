@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "marp -ws slide.md",
+    "start": "marp -ws .",
     "build": "marp --no-stdin slide.md -o docs/index.html"
   },
   "devDependencies": {
