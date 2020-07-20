@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "start": "marp -ws slide.md",
+    "build": "marp --no-stdin slide.md -o docs/index.html"
+  },
+  "devDependencies": {
+    "@marp-team/marp-cli": "^0.19.0"
+  }
+}
