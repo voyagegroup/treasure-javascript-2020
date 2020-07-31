@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+    <title>event loop</title>
+</head>
+<body>
+    <script>
+        let i = 0;
+        let start = Date.now();
+
+        function count() {
+            do {
+                i++;
+            } while(i % 1e9 !== 0);
+            alert("Done in " + (Date.now() - start) + 'ms');
+        };
+        count();
+    </script>
+</body>
+</html>

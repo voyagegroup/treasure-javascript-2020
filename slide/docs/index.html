@@ -1,26 +1,32 @@
-<!DOCTYPE html><html lang="ja-JP"><head><title>Treasure JavaScript 2020</title><meta property="og:title" content="Treasure JavaScript 2020"><meta name="description" content="treasure frontend"><meta property="og:description" content="treasure frontend"><meta charset="UTF-8"><meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"><meta name="apple-mobile-web-app-capable" content="yes"><meta http-equiv="X-UA-Compatible" content="ie=edge"><meta property="og:type" content="website"><meta name="twitter:card" content="summary"><style>.bespoke-marp-note,.bespoke-marp-osc,.bespoke-progress-parent{display:none;transition:none}@media screen{body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button{-webkit-appearance:none;-moz-appearance:none;appearance:none;background-color:transparent;border:0;color:inherit;cursor:pointer;font-size:inherit;opacity:.8;outline:none;padding:0;transition:opacity .2s linear;-webkit-tap-highlight-color:transparent}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:disabled,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:disabled,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:disabled{cursor:not-allowed;opacity:.15!important}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:hover,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:hover,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:hover{opacity:1}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:active,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:active,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:hover:active{opacity:.6}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:not(:disabled),body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:not(:disabled),body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:hover:not(:disabled){transition:none}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev],body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button.bespoke-marp-presenter-info-page-prev{background:transparent url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJNNjggOTBMMjggNTBsNDAtNDAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button.bespoke-marp-presenter-info-page-next{background:transparent url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJNMzIgOTBsNDAtNDAtNDAtNDAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen]{background:transparent url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDpub25lO3N0cm9rZTojZmZmO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6NXB4fTwvc3R5bGU+PC9kZWZzPjxyZWN0IGNsYXNzPSJhIiB4PSIxMCIgeT0iMjAiIHdpZHRoPSI4MCIgaGVpZ2h0PSI2MCIgcng9IjUuNjciLz48cGF0aCBjbGFzcz0iYSIgZD0iTTQwIDcwSDIwVjUwbTIwIDBMMjAgNzBtNDAtNDBoMjB2MjBtLTIwIDBsMjAtMjAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button.exit[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button.exit[data-bespoke-marp-osc=fullscreen]{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDpub25lO3N0cm9rZTojZmZmO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6NXB4fTwvc3R5bGU+PC9kZWZzPjxyZWN0IGNsYXNzPSJhIiB4PSIxMCIgeT0iMjAiIHdpZHRoPSI4MCIgaGVpZ2h0PSI2MCIgcng9IjUuNjciLz48cGF0aCBjbGFzcz0iYSIgZD0iTTIwIDUwaDIwdjIwbS0yMCAwbDIwLTIwbTQwIDBINjBWMzBtMjAgMEw2MCA1MCIvPjwvc3ZnPg==")}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter]{background:transparent url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDpub25lO3N0cm9rZTojZmZmO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS13aWR0aDo1cHh9PC9zdHlsZT48L2RlZnM+PHBhdGggY2xhc3M9ImEiIGQ9Ik0yMCA2MGgtNWE1IDUgMCAwMS01LTVWMjBhNSA1IDAgMDE1LTVoNjBhNSA1IDAgMDE1IDV2NU0zMCA4NWg2MCIvPjxyZWN0IHg9IjMwIiB5PSIzNSIgd2lkdGg9IjYwIiBoZWlnaHQ9IjQwIiByeD0iNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIi8+PHJlY3QgY2xhc3M9ImEiIHg9IjMwIiB5PSIzNSIgd2lkdGg9IjYwIiBoZWlnaHQ9IjQwIiByeD0iNSIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNNDAgNTBoNDBNNDAgNjBoMzAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body,html{height:100%;margin:0}body{background:#000;overflow:hidden}svg.bespoke-marp-slide{opacity:0;pointer-events:none;z-index:-1}svg.bespoke-marp-slide.bespoke-marp-active{opacity:1;pointer-events:auto;z-index:0}svg.bespoke-marp-slide.bespoke-marp-active.bespoke-marp-active-ready *{-webkit-animation-name:__bespoke_marp__!important;animation-name:__bespoke_marp__!important}svg.bespoke-marp-slide[data-bespoke-marp-load=hideable]{display:none}svg.bespoke-marp-slide[data-bespoke-marp-load=hideable].bespoke-marp-active{display:block}[data-bespoke-marp-fragment=inactive]{visibility:hidden}body[data-bespoke-view=""] .bespoke-marp-parent,body[data-bespoke-view=next] .bespoke-marp-parent{bottom:0;left:0;position:absolute;right:0;top:0}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc{background:rgba(0,0,0,.65);border-radius:7px;bottom:50px;color:#fff;display:block;font-family:Helvetica,Arial,sans-serif;font-size:16px;left:50%;line-height:0;opacity:1;padding:12px;position:absolute;touch-action:manipulation;transform:translateX(-50%);transition:opacity .2s linear;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;white-space:nowrap;z-index:1;will-change:transform}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>*,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>*{margin-left:6px}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>:first-child,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>:first-child{margin-left:0}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>span,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>span{opacity:.8}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>span[data-bespoke-marp-osc=page],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>span[data-bespoke-marp-osc=page]{display:inline-block;min-width:140px;text-align:center}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter],body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev]{height:32px;line-height:32px;width:32px}body[data-bespoke-view=""] .bespoke-marp-parent.bespoke-marp-inactive,body[data-bespoke-view=next] .bespoke-marp-parent.bespoke-marp-inactive{cursor:none}body[data-bespoke-view=""] .bespoke-marp-parent.bespoke-marp-inactive>.bespoke-marp-osc,body[data-bespoke-view=next] .bespoke-marp-parent.bespoke-marp-inactive>.bespoke-marp-osc{opacity:0;pointer-events:none}body[data-bespoke-view=""] svg.bespoke-marp-slide,body[data-bespoke-view=next] svg.bespoke-marp-slide{height:100%;left:0;position:absolute;top:0;width:100%}body[data-bespoke-view=""] .bespoke-progress-parent{background:#222;display:flex;height:5px;width:100%}body[data-bespoke-view=""] .bespoke-progress-parent+.bespoke-marp-parent{top:5px}body[data-bespoke-view=""] .bespoke-progress-parent .bespoke-progress-bar{flex:0 0 0;background:#0288d1;transition:flex-basis .2s cubic-bezier(0,1,1,1)}body[data-bespoke-view=next]{background:transparent}body[data-bespoke-view=presenter]{background:#161616}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container{font-family:Helvetica,Arial,sans-serif;height:100%;left:0;position:absolute;top:0;width:100%;display:grid;grid-template-columns:2fr 1fr;grid-template-rows:minmax(140px,1fr) 2fr 3em;grid-template-areas:"current next" "current note" "info    note"}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-parent{grid-area:current;position:relative;overflow:hidden}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-parent svg.bespoke-marp-slide{height:calc(100% - 40px);left:20px;position:absolute;pointer-events:none;top:20px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;width:calc(100% - 40px)}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-parent svg.bespoke-marp-slide.bespoke-marp-active{-webkit-filter:drop-shadow(0 3px 10px rgba(0,0,0,.5));filter:drop-shadow(0 3px 10px rgba(0,0,0,.5))}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-next-container{background:#222;cursor:pointer;display:none;grid-area:next;overflow:hidden;position:relative}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-next-container.active{display:block}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-next-container iframe.bespoke-marp-presenter-next{background:transparent;border:0;display:block;-webkit-filter:drop-shadow(0 3px 10px rgba(0,0,0,.5));filter:drop-shadow(0 3px 10px rgba(0,0,0,.5));height:calc(100% - 40px);left:20px;position:absolute;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;top:20px;width:calc(100% - 40px)}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container{background:#222;color:#eee;grid-area:note}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note{margin:20px;width:calc(100% - 40px);height:calc(100% - 40px);box-sizing:border-box;font-size:1.1em;overflow:auto;padding-right:3px;white-space:pre-wrap;word-wrap:break-word;scrollbar-width:thin;scrollbar-color:hsla(0,0%,93.3%,.5) transparent}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note::-webkit-scrollbar{width:6px}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note::-webkit-scrollbar-track{background:transparent}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note::-webkit-scrollbar-thumb{background:hsla(0,0%,93.3%,.5);border-radius:6px}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note:empty{pointer-events:none}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note.active{display:block}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note p:first-child{margin-top:0}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note p:last-child{margin-bottom:0}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container{align-items:center;box-sizing:border-box;color:#eee;display:flex;flex-wrap:nowrap;grid-area:info;justify-content:center;padding:0 10px}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-time,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-timer{display:block;box-sizing:border-box;padding:0 10px;white-space:nowrap;width:100%}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button{height:1.5em;line-height:1.5em;width:1.5em}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page{order:2;text-align:center}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page .bespoke-marp-presenter-info-page-text{display:inline-block;min-width:120px;text-align:center}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-time{color:#999;order:1;text-align:left}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-timer{color:#999;order:3;text-align:right}}@media print{.bespoke-marp-presenter-info-container,.bespoke-marp-presenter-next-container,.bespoke-marp-presenter-note-container{display:none}}</style><style>@charset "UTF-8";@import url("https://fonts.googleapis.com/css?family=Lato:400,900|Roboto+Mono:400,700&display=swap");div#p>svg>foreignObject>section{width:1280px;height:720px;box-sizing:border-box;overflow:hidden;position:relative;scroll-snap-align:center center}div#p>svg>foreignObject>section:after{bottom:0;content:attr(data-marpit-pagination);padding:inherit;pointer-events:none;position:absolute;right:0}div#p>svg>foreignObject>section:not([data-marpit-pagination]):after{display:none}/* Normalization */div#p>svg>foreignObject>section h1{font-size:2em;margin:0.67em 0}div#p>svg>foreignObject>section video::-webkit-media-controls{will-change:transform}@page{size:1280px 720px;margin:0}@media print{body,html{background-color:#fff;margin:0;page-break-inside:avoid;break-inside:avoid-page}div#p>svg>foreignObject>section{page-break-before:always;break-before:page}div#p>svg>foreignObject>section,div#p>svg>foreignObject>section *{-webkit-print-color-adjust:exact!important;animation-delay:0s!important;animation-duration:0s!important;color-adjust:exact!important;transition:none!important}div#p>svg[data-marpit-svg]{display:block;height:100vh;width:100vw}}div#p>svg>foreignObject>section svg[data-marp-fitting=svg]{display:block;height:auto;width:100%}@supports (-ms-ime-align:auto){div#p>svg>foreignObject>section svg[data-marp-fitting=svg]{position:static}}div#p>svg>foreignObject>section svg[data-marp-fitting=svg].__reflow__{content:""}@supports (-ms-ime-align:auto){div#p>svg>foreignObject>section svg[data-marp-fitting=svg].__reflow__{position:relative}}div#p>svg>foreignObject>section [data-marp-fitting-svg-content]{display:table;white-space:nowrap}div#p>svg>foreignObject>section [data-marp-fitting-svg-content-wrap]{white-space:pre}div#p>svg>foreignObject>section img[data-marp-twemoji]{background:transparent;height:1em;margin:0 .05em 0 .1em;vertical-align:-.1em;width:1em}
+<!DOCTYPE html><html lang="ja-JP"><head><title>Treasure JavaScript 2020</title><meta property="og:title" content="Treasure JavaScript 2020"><meta name="description" content="treasure frontend"><meta property="og:description" content="treasure frontend"><meta charset="UTF-8"><meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"><meta name="apple-mobile-web-app-capable" content="yes"><meta http-equiv="X-UA-Compatible" content="ie=edge"><meta property="og:type" content="website"><meta name="twitter:card" content="summary"><style>.bespoke-marp-note,.bespoke-marp-osc,.bespoke-progress-parent{display:none;transition:none}@media screen{body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button{-webkit-appearance:none;-moz-appearance:none;appearance:none;background-color:transparent;border:0;color:inherit;cursor:pointer;font-size:inherit;opacity:.8;outline:none;padding:0;transition:opacity .2s linear;-webkit-tap-highlight-color:transparent}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:disabled,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:disabled,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:disabled{cursor:not-allowed;opacity:.15!important}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:hover,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:hover,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:hover{opacity:1}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:active,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:active,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:hover:active{opacity:.6}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:not(:disabled),body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:not(:disabled),body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:hover:not(:disabled){transition:none}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev],body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button.bespoke-marp-presenter-info-page-prev{background:transparent url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJNNjggOTBMMjggNTBsNDAtNDAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button.bespoke-marp-presenter-info-page-next{background:transparent url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJNMzIgOTBsNDAtNDAtNDAtNDAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen]{background:transparent url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDpub25lO3N0cm9rZTojZmZmO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6NXB4fTwvc3R5bGU+PC9kZWZzPjxyZWN0IGNsYXNzPSJhIiB4PSIxMCIgeT0iMjAiIHdpZHRoPSI4MCIgaGVpZ2h0PSI2MCIgcng9IjUuNjciLz48cGF0aCBjbGFzcz0iYSIgZD0iTTQwIDcwSDIwVjUwbTIwIDBMMjAgNzBtNDAtNDBoMjB2MjBtLTIwIDBsMjAtMjAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button.exit[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button.exit[data-bespoke-marp-osc=fullscreen]{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDpub25lO3N0cm9rZTojZmZmO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6NXB4fTwvc3R5bGU+PC9kZWZzPjxyZWN0IGNsYXNzPSJhIiB4PSIxMCIgeT0iMjAiIHdpZHRoPSI4MCIgaGVpZ2h0PSI2MCIgcng9IjUuNjciLz48cGF0aCBjbGFzcz0iYSIgZD0iTTIwIDUwaDIwdjIwbS0yMCAwbDIwLTIwbTQwIDBINjBWMzBtMjAgMEw2MCA1MCIvPjwvc3ZnPg==")}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter]{background:transparent url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDpub25lO3N0cm9rZTojZmZmO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS13aWR0aDo1cHh9PC9zdHlsZT48L2RlZnM+PHBhdGggY2xhc3M9ImEiIGQ9Ik0yMCA2MGgtNWE1IDUgMCAwMS01LTVWMjBhNSA1IDAgMDE1LTVoNjBhNSA1IDAgMDE1IDV2NU0zMCA4NWg2MCIvPjxyZWN0IHg9IjMwIiB5PSIzNSIgd2lkdGg9IjYwIiBoZWlnaHQ9IjQwIiByeD0iNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIi8+PHJlY3QgY2xhc3M9ImEiIHg9IjMwIiB5PSIzNSIgd2lkdGg9IjYwIiBoZWlnaHQ9IjQwIiByeD0iNSIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNNDAgNTBoNDBNNDAgNjBoMzAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body,html{height:100%;margin:0}body{background:#000;overflow:hidden}svg.bespoke-marp-slide{opacity:0;pointer-events:none;z-index:-1}svg.bespoke-marp-slide.bespoke-marp-active{opacity:1;pointer-events:auto;z-index:0}svg.bespoke-marp-slide.bespoke-marp-active.bespoke-marp-active-ready *{-webkit-animation-name:__bespoke_marp__!important;animation-name:__bespoke_marp__!important}svg.bespoke-marp-slide[data-bespoke-marp-load=hideable]{display:none}svg.bespoke-marp-slide[data-bespoke-marp-load=hideable].bespoke-marp-active{display:block}[data-bespoke-marp-fragment=inactive]{visibility:hidden}body[data-bespoke-view=""] .bespoke-marp-parent,body[data-bespoke-view=next] .bespoke-marp-parent{bottom:0;left:0;position:absolute;right:0;top:0}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc{background:rgba(0,0,0,.65);border-radius:7px;bottom:50px;color:#fff;display:block;font-family:Helvetica,Arial,sans-serif;font-size:16px;left:50%;line-height:0;opacity:1;padding:12px;position:absolute;touch-action:manipulation;transform:translateX(-50%);transition:opacity .2s linear;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;white-space:nowrap;z-index:1;will-change:transform}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>*,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>*{margin-left:6px}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>:first-child,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>:first-child{margin-left:0}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>span,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>span{opacity:.8}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>span[data-bespoke-marp-osc=page],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>span[data-bespoke-marp-osc=page]{display:inline-block;min-width:140px;text-align:center}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter],body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev]{height:32px;line-height:32px;width:32px}body[data-bespoke-view=""] .bespoke-marp-parent.bespoke-marp-inactive,body[data-bespoke-view=next] .bespoke-marp-parent.bespoke-marp-inactive{cursor:none}body[data-bespoke-view=""] .bespoke-marp-parent.bespoke-marp-inactive>.bespoke-marp-osc,body[data-bespoke-view=next] .bespoke-marp-parent.bespoke-marp-inactive>.bespoke-marp-osc{opacity:0;pointer-events:none}body[data-bespoke-view=""] svg.bespoke-marp-slide,body[data-bespoke-view=next] svg.bespoke-marp-slide{height:100%;left:0;position:absolute;top:0;width:100%}body[data-bespoke-view=""] .bespoke-progress-parent{background:#222;display:flex;height:5px;width:100%}body[data-bespoke-view=""] .bespoke-progress-parent+.bespoke-marp-parent{top:5px}body[data-bespoke-view=""] .bespoke-progress-parent .bespoke-progress-bar{flex:0 0 0;background:#0288d1;transition:flex-basis .2s cubic-bezier(0,1,1,1)}body[data-bespoke-view=next]{background:transparent}body[data-bespoke-view=presenter]{background:#161616}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container{font-family:Helvetica,Arial,sans-serif;height:100%;left:0;position:absolute;top:0;width:100%;display:grid;grid-template-columns:2fr 1fr;grid-template-rows:minmax(140px,1fr) 2fr 3em;grid-template-areas:"current next" "current note" "info    note"}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-parent{grid-area:current;position:relative;overflow:hidden}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-parent svg.bespoke-marp-slide{height:calc(100% - 40px);left:20px;position:absolute;pointer-events:none;top:20px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;width:calc(100% - 40px)}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-parent svg.bespoke-marp-slide.bespoke-marp-active{-webkit-filter:drop-shadow(0 3px 10px rgba(0,0,0,.5));filter:drop-shadow(0 3px 10px rgba(0,0,0,.5))}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-next-container{background:#222;cursor:pointer;display:none;grid-area:next;overflow:hidden;position:relative}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-next-container.active{display:block}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-next-container iframe.bespoke-marp-presenter-next{background:transparent;border:0;display:block;-webkit-filter:drop-shadow(0 3px 10px rgba(0,0,0,.5));filter:drop-shadow(0 3px 10px rgba(0,0,0,.5));height:calc(100% - 40px);left:20px;position:absolute;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;top:20px;width:calc(100% - 40px)}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container{background:#222;color:#eee;grid-area:note}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note{margin:20px;width:calc(100% - 40px);height:calc(100% - 40px);box-sizing:border-box;font-size:1.1em;overflow:auto;padding-right:3px;white-space:pre-wrap;word-wrap:break-word;scrollbar-width:thin;scrollbar-color:hsla(0,0%,93.3%,.5) transparent}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note::-webkit-scrollbar{width:6px}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note::-webkit-scrollbar-track{background:transparent}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note::-webkit-scrollbar-thumb{background:hsla(0,0%,93.3%,.5);border-radius:6px}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note:empty{pointer-events:none}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note.active{display:block}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note p:first-child{margin-top:0}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note p:last-child{margin-bottom:0}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container{align-items:center;box-sizing:border-box;color:#eee;display:flex;flex-wrap:nowrap;grid-area:info;justify-content:center;padding:0 10px}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-time,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-timer{display:block;box-sizing:border-box;padding:0 10px;white-space:nowrap;width:100%}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button{height:1.5em;line-height:1.5em;width:1.5em}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page{order:2;text-align:center}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page .bespoke-marp-presenter-info-page-text{display:inline-block;min-width:120px;text-align:center}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-time{color:#999;order:1;text-align:left}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-timer{color:#999;order:3;text-align:right}}@media print{.bespoke-marp-presenter-info-container,.bespoke-marp-presenter-next-container,.bespoke-marp-presenter-note-container{display:none}}</style><style>div#p>svg>foreignObject>section{width:1280px;height:720px;box-sizing:border-box;overflow:hidden;position:relative;scroll-snap-align:center center}div#p>svg>foreignObject>section:after{bottom:0;content:attr(data-marpit-pagination);padding:inherit;pointer-events:none;position:absolute;right:0}div#p>svg>foreignObject>section:not([data-marpit-pagination]):after{display:none}/* Normalization */div#p>svg>foreignObject>section h1{font-size:2em;margin:0.67em 0}div#p>svg>foreignObject>section video::-webkit-media-controls{will-change:transform}@page{size:1280px 720px;margin:0}@media print{body,html{background-color:#fff;margin:0;page-break-inside:avoid;break-inside:avoid-page}div#p>svg>foreignObject>section{page-break-before:always;break-before:page}div#p>svg>foreignObject>section,div#p>svg>foreignObject>section *{-webkit-print-color-adjust:exact!important;animation-delay:0s!important;animation-duration:0s!important;color-adjust:exact!important;transition:none!important}div#p>svg[data-marpit-svg]{display:block;height:100vh;width:100vw}}div#p>svg>foreignObject>section svg[data-marp-fitting=svg]{display:block;height:auto;width:100%}@supports (-ms-ime-align:auto){div#p>svg>foreignObject>section svg[data-marp-fitting=svg]{position:static}}div#p>svg>foreignObject>section svg[data-marp-fitting=svg].__reflow__{content:""}@supports (-ms-ime-align:auto){div#p>svg>foreignObject>section svg[data-marp-fitting=svg].__reflow__{position:relative}}div#p>svg>foreignObject>section [data-marp-fitting-svg-content]{display:table;white-space:nowrap}div#p>svg>foreignObject>section [data-marp-fitting-svg-content-wrap]{white-space:pre}div#p>svg>foreignObject>section img[data-marp-twemoji]{background:transparent;height:1em;margin:0 .05em 0 .1em;vertical-align:-.1em;width:1em}
 /*!
- * Marp / Marpit Gaia theme.
+ * Marp default theme.
  *
- * @theme gaia
+ * @theme default
  * @author Yuki Hattori
  *
  * @auto-scaling true
  * @size 4:3 960px 720px
- */div#p>svg>foreignObject>section .hljs{display:block;overflow-x:auto;padding:.5em;background:#000;color:#f8f8f8}div#p>svg>foreignObject>section .hljs-comment,div#p>svg>foreignObject>section .hljs-quote{color:#aeaeae;font-style:italic}div#p>svg>foreignObject>section .hljs-keyword,div#p>svg>foreignObject>section .hljs-selector-tag,div#p>svg>foreignObject>section .hljs-type{color:#e28964}div#p>svg>foreignObject>section .hljs-string{color:#65b042}div#p>svg>foreignObject>section .hljs-subst{color:#daefa3}div#p>svg>foreignObject>section .hljs-link,div#p>svg>foreignObject>section .hljs-regexp{color:#e9c062}div#p>svg>foreignObject>section .hljs-name,div#p>svg>foreignObject>section .hljs-section,div#p>svg>foreignObject>section .hljs-tag,div#p>svg>foreignObject>section .hljs-title{color:#89bdff}div#p>svg>foreignObject>section .hljs-class .hljs-title,div#p>svg>foreignObject>section .hljs-doctag{text-decoration:underline}div#p>svg>foreignObject>section .hljs-bullet,div#p>svg>foreignObject>section .hljs-number,div#p>svg>foreignObject>section .hljs-symbol{color:#3387cc}div#p>svg>foreignObject>section .hljs-params,div#p>svg>foreignObject>section .hljs-template-variable,div#p>svg>foreignObject>section .hljs-variable{color:#3e87e3}div#p>svg>foreignObject>section .hljs-attribute{color:#cda869}div#p>svg>foreignObject>section .hljs-meta{color:#8996a8}div#p>svg>foreignObject>section .hljs-formula{background-color:#0e2231;color:#f8f8f8;font-style:italic}div#p>svg>foreignObject>section .hljs-addition{background-color:#253b22;color:#f8f8f8}div#p>svg>foreignObject>section .hljs-deletion{background-color:#420e09;color:#f8f8f8}div#p>svg>foreignObject>section .hljs-selector-class{color:#9b703f}div#p>svg>foreignObject>section .hljs-selector-id{color:#8b98ab}div#p>svg>foreignObject>section .hljs-emphasis{font-style:italic}div#p>svg>foreignObject>section .hljs-strong{font-weight:700}div#p>svg>foreignObject>section svg[data-marp-fitting=svg]{max-height:580px}div#p>svg>foreignObject>section h1,div#p>svg>foreignObject>section h2,div#p>svg>foreignObject>section h3,div#p>svg>foreignObject>section h4,div#p>svg>foreignObject>section h5,div#p>svg>foreignObject>section h6{margin:.5em 0 0}div#p>svg>foreignObject>section h1 strong,div#p>svg>foreignObject>section h2 strong,div#p>svg>foreignObject>section h3 strong,div#p>svg>foreignObject>section h4 strong,div#p>svg>foreignObject>section h5 strong,div#p>svg>foreignObject>section h6 strong{font-weight:inherit}div#p>svg>foreignObject>section h1{font-size:1.8em}div#p>svg>foreignObject>section h2{font-size:1.5em}div#p>svg>foreignObject>section h3{font-size:1.3em}div#p>svg>foreignObject>section h4{font-size:1.1em}div#p>svg>foreignObject>section h5{font-size:1em}div#p>svg>foreignObject>section h6{font-size:.9em}div#p>svg>foreignObject>section blockquote,div#p>svg>foreignObject>section p{margin:1em 0 0}div#p>svg>foreignObject>section ol>li,div#p>svg>foreignObject>section ul>li{margin:.3em 0 0}div#p>svg>foreignObject>section ol>li>p,div#p>svg>foreignObject>section ul>li>p{margin:.6em 0 0}div#p>svg>foreignObject>section code{display:inline-block;font-family:Roboto Mono,monospace;font-size:.8em;letter-spacing:0;margin:-.1em .15em;padding:.1em .2em;vertical-align:baseline}div#p>svg>foreignObject>section pre{display:block;margin:1em 0 0;min-height:1em;overflow:visible}div#p>svg>foreignObject>section pre code{box-sizing:border-box;margin:0;min-width:100%;padding:.5em;font-size:.7em}div#p>svg>foreignObject>section pre code svg[data-marp-fitting=svg]{max-height:calc(580px - 1em)}div#p>svg>foreignObject>section blockquote{margin:1em 0 0;padding:0 1em;position:relative}div#p>svg>foreignObject>section blockquote:after,div#p>svg>foreignObject>section blockquote:before{content:"“";display:block;font-family:Times New Roman,serif;font-weight:700;position:absolute}div#p>svg>foreignObject>section blockquote:before{top:0;left:0}div#p>svg>foreignObject>section blockquote:after{right:0;bottom:0;transform:rotate(180deg)}div#p>svg>foreignObject>section blockquote>:first-child{margin-top:0}div#p>svg>foreignObject>section mark{background:transparent}div#p>svg>foreignObject>section table{border-spacing:0;border-collapse:collapse;margin:1em 0 0}div#p>svg>foreignObject>section table td,div#p>svg>foreignObject>section table th{padding:.2em .4em;border-width:1px;border-style:solid}div#p>svg>foreignObject>section{background-image:linear-gradient(135deg,hsla(0,0%,53.3%,0),hsla(0,0%,53.3%,.02) 50%,hsla(0,0%,100%,0) 0,hsla(0,0%,100%,.05));font-size:35px;font-family:Lato,Avenir Next,Avenir,Trebuchet MS,Segoe UI,sans-serif;height:720px;line-height:1.35;letter-spacing:1.25px;padding:70px;width:1280px;word-wrap:break-word;color:#455a64;background-color:#fff8e1}div#p>svg>foreignObject>section{--marpit-root-font-size:35px}div#p>svg>foreignObject>section>:first-child,div#p>svg>foreignObject>section>header:first-child+*{margin-top:0}div#p>svg>foreignObject>section a,div#p>svg>foreignObject>section mark{color:#0288d1}div#p>svg>foreignObject>section code{background:#6a7a7d;color:#fff8e1}div#p>svg>foreignObject>section h1 strong,div#p>svg>foreignObject>section h2 strong,div#p>svg>foreignObject>section h3 strong,div#p>svg>foreignObject>section h4 strong,div#p>svg>foreignObject>section h5 strong,div#p>svg>foreignObject>section h6 strong{color:#0288d1}div#p>svg>foreignObject>section pre>code{background:#455a64}div#p>svg>foreignObject>section blockquote:after,div#p>svg>foreignObject>section blockquote:before,div#p>svg>foreignObject>section footer,div#p>svg>foreignObject>section header,div#p>svg>foreignObject>section section:after{color:#6a7a7d}div#p>svg>foreignObject>section table td,div#p>svg>foreignObject>section table th{border-color:#455a64}div#p>svg>foreignObject>section table thead th{background:#455a64;color:#fff8e1}div#p>svg>foreignObject>section table tbody>tr:nth-child(odd) td,div#p>svg>foreignObject>section table tbody>tr:nth-child(odd) th{background:rgba(69,90,100,.1)}div#p>svg>foreignObject>section.invert{color:#fff8e1;background-color:#455a64}div#p>svg>foreignObject>section.invert a,div#p>svg>foreignObject>section.invert mark{color:#81d4fa}div#p>svg>foreignObject>section.invert code{background:#dad8c8;color:#455a64}div#p>svg>foreignObject>section.invert h1 strong,div#p>svg>foreignObject>section.invert h2 strong,div#p>svg>foreignObject>section.invert h3 strong,div#p>svg>foreignObject>section.invert h4 strong,div#p>svg>foreignObject>section.invert h5 strong,div#p>svg>foreignObject>section.invert h6 strong{color:#81d4fa}div#p>svg>foreignObject>section.invert pre>code{background:#fff8e1}div#p>svg>foreignObject>section.invert blockquote:after,div#p>svg>foreignObject>section.invert blockquote:before,div#p>svg>foreignObject>section.invert footer,div#p>svg>foreignObject>section.invert header,div#p>svg>foreignObject>section.invert section:after{color:#dad8c8}div#p>svg>foreignObject>section.invert table td,div#p>svg>foreignObject>section.invert table th{border-color:#fff8e1}div#p>svg>foreignObject>section.invert table thead th{background:#fff8e1;color:#455a64}div#p>svg>foreignObject>section.invert table tbody>tr:nth-child(odd) td,div#p>svg>foreignObject>section.invert table tbody>tr:nth-child(odd) th{background:rgba(255,248,225,.1)}div#p>svg>foreignObject>section.gaia{color:#fff8e1;background-color:#0288d1}div#p>svg>foreignObject>section.gaia a,div#p>svg>foreignObject>section.gaia mark{color:#81d4fa}div#p>svg>foreignObject>section.gaia code{background:#cce2de;color:#0288d1}div#p>svg>foreignObject>section.gaia h1 strong,div#p>svg>foreignObject>section.gaia h2 strong,div#p>svg>foreignObject>section.gaia h3 strong,div#p>svg>foreignObject>section.gaia h4 strong,div#p>svg>foreignObject>section.gaia h5 strong,div#p>svg>foreignObject>section.gaia h6 strong{color:#81d4fa}div#p>svg>foreignObject>section.gaia pre>code{background:#fff8e1}div#p>svg>foreignObject>section.gaia blockquote:after,div#p>svg>foreignObject>section.gaia blockquote:before,div#p>svg>foreignObject>section.gaia footer,div#p>svg>foreignObject>section.gaia header,div#p>svg>foreignObject>section.gaia section:after{color:#cce2de}div#p>svg>foreignObject>section.gaia table td,div#p>svg>foreignObject>section.gaia table th{border-color:#fff8e1}div#p>svg>foreignObject>section.gaia table thead th{background:#fff8e1;color:#0288d1}div#p>svg>foreignObject>section.gaia table tbody>tr:nth-child(odd) td,div#p>svg>foreignObject>section.gaia table tbody>tr:nth-child(odd) th{background:rgba(255,248,225,.1)}div#p>svg>foreignObject>section.lead{display:flex;flex-direction:column;flex-wrap:nowrap;justify-content:center}div#p>svg>foreignObject>section.lead h1,div#p>svg>foreignObject>section.lead h2,div#p>svg>foreignObject>section.lead h3,div#p>svg>foreignObject>section.lead h4,div#p>svg>foreignObject>section.lead h5,div#p>svg>foreignObject>section.lead h6{text-align:center}div#p>svg>foreignObject>section.lead h1 svg[data-marp-fitting=svg],div#p>svg>foreignObject>section.lead h2 svg[data-marp-fitting=svg],div#p>svg>foreignObject>section.lead h3 svg[data-marp-fitting=svg],div#p>svg>foreignObject>section.lead h4 svg[data-marp-fitting=svg],div#p>svg>foreignObject>section.lead h5 svg[data-marp-fitting=svg],div#p>svg>foreignObject>section.lead h6 svg[data-marp-fitting=svg]{--preserve-aspect-ratio:xMidYMid meet}div#p>svg>foreignObject>section.lead p{text-align:center}div#p>svg>foreignObject>section.lead blockquote>h1,div#p>svg>foreignObject>section.lead blockquote>h2,div#p>svg>foreignObject>section.lead blockquote>h3,div#p>svg>foreignObject>section.lead blockquote>h4,div#p>svg>foreignObject>section.lead blockquote>h5,div#p>svg>foreignObject>section.lead blockquote>h6,div#p>svg>foreignObject>section.lead blockquote>p{text-align:left}div#p>svg>foreignObject>section.lead blockquote svg[data-marp-fitting=svg]:not([data-marp-fitting-math]){--preserve-aspect-ratio:xMinYMin meet}div#p>svg>foreignObject>section.lead ol>li>p,div#p>svg>foreignObject>section.lead ul>li>p{text-align:left}div#p>svg>foreignObject>section.lead table{margin-left:auto;margin-right:auto}div#p>svg>foreignObject>section:after,div#p>svg>foreignObject>section footer,div#p>svg>foreignObject>section header{box-sizing:border-box;font-size:66%;height:70px;line-height:50px;overflow:hidden;padding:10px 25px;position:absolute}div#p>svg>foreignObject>section:after{--marpit-root-font-size:66%}div#p>svg>foreignObject>section header{top:0}div#p>svg>foreignObject>section footer,div#p>svg>foreignObject>section header{left:0;right:0}div#p>svg>foreignObject>section footer{bottom:0}div#p>svg>foreignObject>section:after{right:0;bottom:0;font-size:80%}div#p>svg>foreignObject>section:after{--marpit-root-font-size:80%}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]{display:block!important;padding:0!important}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]:after,div#p>svg>foreignObject>section[data-marpit-advanced-background=background]:before,div#p>svg>foreignObject>section[data-marpit-advanced-background=content]:after,div#p>svg>foreignObject>section[data-marpit-advanced-background=content]:before{display:none!important}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container]{all:initial;display:flex;flex-direction:row;height:100%;overflow:hidden;width:100%}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container][data-marpit-advanced-background-direction=vertical]{flex-direction:column}div#p>svg>foreignObject>section[data-marpit-advanced-background=background][data-marpit-advanced-background-split]>div[data-marpit-advanced-background-container]{width:var(--marpit-advanced-background-split,50%)}div#p>svg>foreignObject>section[data-marpit-advanced-background=background][data-marpit-advanced-background-split=right]>div[data-marpit-advanced-background-container]{margin-left:calc(100% - var(--marpit-advanced-background-split, 50%))}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container]>figure{all:initial;background-position:center;background-repeat:no-repeat;background-size:cover;flex:auto;margin:0}div#p>svg>foreignObject>section[data-marpit-advanced-background=content],div#p>svg>foreignObject>section[data-marpit-advanced-background=pseudo]{background:transparent!important}div#p>svg>foreignObject>section[data-marpit-advanced-background=pseudo],div#p>svg[data-marpit-svg]>foreignObject[data-marpit-advanced-background=pseudo]{pointer-events:none!important}div#p>svg>foreignObject>section[data-marpit-advanced-background-split]{width:100%;height:100%}</style></head><body><div class="bespoke-marp-osc"><button data-bespoke-marp-osc="prev" tabindex="-1" title="Previous slide">Previous slide</button><span data-bespoke-marp-osc="page"></span><button data-bespoke-marp-osc="next" tabindex="-1" title="Next slide">Next slide</button><button data-bespoke-marp-osc="fullscreen" tabindex="-1" title="Toggle fullscreen (f)">Toggle fullscreen</button><button data-bespoke-marp-osc="presenter" tabindex="-1" title="Open presenter view (p)">Open presenter view</button></div><div id="p"><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="1" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" data-theme="gaia" class="invert" data-marpit-pagination="1" data-marpit-pagination-total="7" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;--theme:gaia;">
+ */div#p>svg>foreignObject>section .octicon{display:inline-block;fill:currentColor;vertical-align:text-bottom}div#p>svg>foreignObject>section .anchor{float:left;line-height:1;margin-left:-20px;padding-right:4px}div#p>svg>foreignObject>section .anchor:focus{outline:none}div#p>svg>foreignObject>section h1 .octicon-link,div#p>svg>foreignObject>section h2 .octicon-link,div#p>svg>foreignObject>section h3 .octicon-link,div#p>svg>foreignObject>section h4 .octicon-link,div#p>svg>foreignObject>section h5 .octicon-link,div#p>svg>foreignObject>section h6 .octicon-link{color:#1b1f23;vertical-align:middle;visibility:hidden}div#p>svg>foreignObject>section h1:hover .anchor,div#p>svg>foreignObject>section h2:hover .anchor,div#p>svg>foreignObject>section h3:hover .anchor,div#p>svg>foreignObject>section h4:hover .anchor,div#p>svg>foreignObject>section h5:hover .anchor,div#p>svg>foreignObject>section h6:hover .anchor{text-decoration:none}div#p>svg>foreignObject>section h1:hover .anchor .octicon-link,div#p>svg>foreignObject>section h2:hover .anchor .octicon-link,div#p>svg>foreignObject>section h3:hover .anchor .octicon-link,div#p>svg>foreignObject>section h4:hover .anchor .octicon-link,div#p>svg>foreignObject>section h5:hover .anchor .octicon-link,div#p>svg>foreignObject>section h6:hover .anchor .octicon-link{visibility:visible}div#p>svg>foreignObject>section h1:hover .anchor .octicon-link:before,div#p>svg>foreignObject>section h2:hover .anchor .octicon-link:before,div#p>svg>foreignObject>section h3:hover .anchor .octicon-link:before,div#p>svg>foreignObject>section h4:hover .anchor .octicon-link:before,div#p>svg>foreignObject>section h5:hover .anchor .octicon-link:before,div#p>svg>foreignObject>section h6:hover .anchor .octicon-link:before{width:16px;height:16px;content:" ";display:inline-block;background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' aria-hidden='true'%3E%3Cpath fill-rule='evenodd' d='M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z'/%3E%3C/svg%3E")}div#p>svg>foreignObject>section{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;color:#24292e;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:16px;line-height:1.5;word-wrap:break-word}div#p>svg>foreignObject>section{--marpit-root-font-size:16px}div#p>svg>foreignObject>section details{display:block}div#p>svg>foreignObject>section summary{display:list-item}div#p>svg>foreignObject>section a{background-color:initial}div#p>svg>foreignObject>section a:active,div#p>svg>foreignObject>section a:hover{outline-width:0}div#p>svg>foreignObject>section strong{font-weight:inherit;font-weight:bolder}div#p>svg>foreignObject>section h1{margin:.67em 0}div#p>svg>foreignObject>section img{border-style:none}div#p>svg>foreignObject>section code,div#p>svg>foreignObject>section kbd,div#p>svg>foreignObject>section pre{font-family:monospace,monospace;font-size:1em}div#p>svg>foreignObject>section hr{box-sizing:initial;overflow:visible}div#p>svg>foreignObject>section input{font:inherit;margin:0;overflow:visible}div#p>svg>foreignObject>section [type=checkbox]{padding:0}div#p>svg>foreignObject>section *,div#p>svg>foreignObject>section [type=checkbox]{box-sizing:border-box}div#p>svg>foreignObject>section input{font-family:inherit;font-size:inherit;line-height:inherit}div#p>svg>foreignObject>section a{color:#0366d6;text-decoration:none}div#p>svg>foreignObject>section a:hover{text-decoration:underline}div#p>svg>foreignObject>section strong{font-weight:600}div#p>svg>foreignObject>section hr{height:0;margin:15px 0;overflow:hidden;background:transparent;border-bottom:1px solid #dfe2e5}div#p>svg>foreignObject>section hr:after,div#p>svg>foreignObject>section hr:before{display:table;content:""}div#p>svg>foreignObject>section hr:after{clear:both}div#p>svg>foreignObject>section table{border-spacing:0;border-collapse:collapse}div#p>svg>foreignObject>section td,div#p>svg>foreignObject>section th{padding:0}div#p>svg>foreignObject>section details summary{cursor:pointer}div#p>svg>foreignObject>section h1,div#p>svg>foreignObject>section h2,div#p>svg>foreignObject>section h3,div#p>svg>foreignObject>section h4,div#p>svg>foreignObject>section h5,div#p>svg>foreignObject>section h6{margin-top:0;margin-bottom:0}div#p>svg>foreignObject>section h1{font-size:32px}div#p>svg>foreignObject>section h1,div#p>svg>foreignObject>section h2{font-weight:600}div#p>svg>foreignObject>section h2{font-size:24px}div#p>svg>foreignObject>section h3{font-size:20px}div#p>svg>foreignObject>section h3,div#p>svg>foreignObject>section h4{font-weight:600}div#p>svg>foreignObject>section h4{font-size:16px}div#p>svg>foreignObject>section h5{font-size:14px}div#p>svg>foreignObject>section h5,div#p>svg>foreignObject>section h6{font-weight:600}div#p>svg>foreignObject>section h6{font-size:12px}div#p>svg>foreignObject>section p{margin-top:0;margin-bottom:10px}div#p>svg>foreignObject>section blockquote{margin:0}div#p>svg>foreignObject>section ol,div#p>svg>foreignObject>section ul{padding-left:0;margin-top:0;margin-bottom:0}div#p>svg>foreignObject>section ol ol,div#p>svg>foreignObject>section ul ol{list-style-type:lower-roman}div#p>svg>foreignObject>section ol ol ol,div#p>svg>foreignObject>section ol ul ol,div#p>svg>foreignObject>section ul ol ol,div#p>svg>foreignObject>section ul ul ol{list-style-type:lower-alpha}div#p>svg>foreignObject>section dd{margin-left:0}div#p>svg>foreignObject>section code,div#p>svg>foreignObject>section pre{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:12px}div#p>svg>foreignObject>section pre{margin-top:0;margin-bottom:0}div#p>svg>foreignObject>section input::-webkit-inner-spin-button,div#p>svg>foreignObject>section input::-webkit-outer-spin-button{margin:0;-webkit-appearance:none;appearance:none}div#p>svg>foreignObject>section :checked+.radio-label{position:relative;z-index:1;border-color:#0366d6}div#p>svg>foreignObject>section .border{border:1px solid #e1e4e8!important}div#p>svg>foreignObject>section .border-0{border:0!important}div#p>svg>foreignObject>section .border-bottom{border-bottom:1px solid #e1e4e8!important}div#p>svg>foreignObject>section .rounded-1{border-radius:3px!important}div#p>svg>foreignObject>section .bg-white{background-color:#fff!important}div#p>svg>foreignObject>section .bg-gray-light{background-color:#fafbfc!important}div#p>svg>foreignObject>section .text-gray-light{color:#6a737d!important}div#p>svg>foreignObject>section .pl-3,div#p>svg>foreignObject>section .px-3{padding-left:16px!important}div#p>svg>foreignObject>section .px-3{padding-right:16px!important}div#p>svg>foreignObject>section .f6{font-size:12px!important}div#p>svg>foreignObject>section div#p>svg>foreignObject>section section.f6{--marpit-root-font-size:12px!important}div#p>svg>foreignObject>section .lh-condensed{line-height:1.25!important}div#p>svg>foreignObject>section .text-bold{font-weight:600!important}div#p>svg>foreignObject>section .pl-c{color:#6a737d}div#p>svg>foreignObject>section .pl-c1,div#p>svg>foreignObject>section .pl-s .pl-v{color:#005cc5}div#p>svg>foreignObject>section .pl-e,div#p>svg>foreignObject>section .pl-en{color:#6f42c1}div#p>svg>foreignObject>section .pl-s .pl-s1,div#p>svg>foreignObject>section .pl-smi{color:#24292e}div#p>svg>foreignObject>section .pl-ent{color:#22863a}div#p>svg>foreignObject>section .pl-k{color:#d73a49}div#p>svg>foreignObject>section .pl-pds,div#p>svg>foreignObject>section .pl-s,div#p>svg>foreignObject>section .pl-s .pl-pse .pl-s1,div#p>svg>foreignObject>section .pl-sr,div#p>svg>foreignObject>section .pl-sr .pl-cce,div#p>svg>foreignObject>section .pl-sr .pl-sra,div#p>svg>foreignObject>section .pl-sr .pl-sre{color:#032f62}div#p>svg>foreignObject>section .pl-smw,div#p>svg>foreignObject>section .pl-v{color:#e36209}div#p>svg>foreignObject>section .pl-bu{color:#b31d28}div#p>svg>foreignObject>section .pl-ii{color:#fafbfc;background-color:#b31d28}div#p>svg>foreignObject>section .pl-c2{color:#fafbfc;background-color:#d73a49}div#p>svg>foreignObject>section .pl-c2:before{content:"^M"}div#p>svg>foreignObject>section .pl-sr .pl-cce{font-weight:700;color:#22863a}div#p>svg>foreignObject>section .pl-ml{color:#735c0f}div#p>svg>foreignObject>section .pl-mh,div#p>svg>foreignObject>section .pl-mh .pl-en,div#p>svg>foreignObject>section .pl-ms{font-weight:700;color:#005cc5}div#p>svg>foreignObject>section .pl-mi{font-style:italic;color:#24292e}div#p>svg>foreignObject>section .pl-mb{font-weight:700;color:#24292e}div#p>svg>foreignObject>section .pl-md{color:#b31d28;background-color:#ffeef0}div#p>svg>foreignObject>section .pl-mi1{color:#22863a;background-color:#f0fff4}div#p>svg>foreignObject>section .pl-mc{color:#e36209;background-color:#ffebda}div#p>svg>foreignObject>section .pl-mi2{color:#f6f8fa;background-color:#005cc5}div#p>svg>foreignObject>section .pl-mdr{font-weight:700;color:#6f42c1}div#p>svg>foreignObject>section .pl-ba{color:#586069}div#p>svg>foreignObject>section .pl-sg{color:#959da5}div#p>svg>foreignObject>section .pl-corl{text-decoration:underline;color:#032f62}div#p>svg>foreignObject>section .mb-0{margin-bottom:0!important}div#p>svg>foreignObject>section .my-2{margin-bottom:8px!important;margin-top:8px!important}div#p>svg>foreignObject>section .pl-0{padding-left:0!important}div#p>svg>foreignObject>section .py-0{padding-top:0!important;padding-bottom:0!important}div#p>svg>foreignObject>section .pl-1{padding-left:4px!important}div#p>svg>foreignObject>section .pl-2{padding-left:8px!important}div#p>svg>foreignObject>section .py-2{padding-top:8px!important;padding-bottom:8px!important}div#p>svg>foreignObject>section .pl-3{padding-left:16px!important}div#p>svg>foreignObject>section .pl-4{padding-left:24px!important}div#p>svg>foreignObject>section .pl-5{padding-left:32px!important}div#p>svg>foreignObject>section .pl-6{padding-left:40px!important}div#p>svg>foreignObject>section .pl-7{padding-left:48px!important}div#p>svg>foreignObject>section .pl-8{padding-left:64px!important}div#p>svg>foreignObject>section .pl-9{padding-left:80px!important}div#p>svg>foreignObject>section .pl-10{padding-left:96px!important}div#p>svg>foreignObject>section .pl-11{padding-left:112px!important}div#p>svg>foreignObject>section .pl-12{padding-left:128px!important}div#p>svg>foreignObject>section hr{border-bottom-color:#eee}div#p>svg>foreignObject>section kbd{display:inline-block;padding:3px 5px;font:11px SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;line-height:10px;color:#444d56;vertical-align:middle;background-color:#fafbfc;border:1px solid #d1d5da;border-radius:3px;box-shadow:inset 0 -1px 0 #d1d5da}div#p>svg>foreignObject>section:after,div#p>svg>foreignObject>section:before{display:table
+  /* content:""; */}div#p>svg>foreignObject>section:after{clear:both}div#p>svg>foreignObject>section>:first-child{margin-top:0!important}div#p>svg>foreignObject>section>:last-child{margin-bottom:0!important}div#p>svg>foreignObject>section a:not([href]){color:inherit;text-decoration:none}div#p>svg>foreignObject>section blockquote,div#p>svg>foreignObject>section details,div#p>svg>foreignObject>section dl,div#p>svg>foreignObject>section ol,div#p>svg>foreignObject>section p,div#p>svg>foreignObject>section pre,div#p>svg>foreignObject>section table,div#p>svg>foreignObject>section ul{margin-top:0;margin-bottom:16px}div#p>svg>foreignObject>section hr{height:.25em;padding:0;margin:24px 0;background-color:#e1e4e8;border:0}div#p>svg>foreignObject>section blockquote{padding:0 1em;color:#6a737d;border-left:.25em solid #dfe2e5}div#p>svg>foreignObject>section blockquote>:first-child{margin-top:0}div#p>svg>foreignObject>section blockquote>:last-child{margin-bottom:0}div#p>svg>foreignObject>section h1,div#p>svg>foreignObject>section h2,div#p>svg>foreignObject>section h3,div#p>svg>foreignObject>section h4,div#p>svg>foreignObject>section h5,div#p>svg>foreignObject>section h6{margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25}div#p>svg>foreignObject>section h1{font-size:2em}div#p>svg>foreignObject>section h1,div#p>svg>foreignObject>section h2{padding-bottom:.3em;border-bottom:1px solid #eaecef}div#p>svg>foreignObject>section h2{font-size:1.5em}div#p>svg>foreignObject>section h3{font-size:1.25em}div#p>svg>foreignObject>section h4{font-size:1em}div#p>svg>foreignObject>section h5{font-size:.875em}div#p>svg>foreignObject>section h6{font-size:.85em;color:#6a737d}div#p>svg>foreignObject>section ol,div#p>svg>foreignObject>section ul{padding-left:2em}div#p>svg>foreignObject>section ol ol,div#p>svg>foreignObject>section ol ul,div#p>svg>foreignObject>section ul ol,div#p>svg>foreignObject>section ul ul{margin-top:0;margin-bottom:0}div#p>svg>foreignObject>section li{word-wrap:break-all}div#p>svg>foreignObject>section li>p{margin-top:16px}div#p>svg>foreignObject>section li+li{margin-top:.25em}div#p>svg>foreignObject>section dl{padding:0}div#p>svg>foreignObject>section dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:600}div#p>svg>foreignObject>section dl dd{padding:0 16px;margin-bottom:16px}div#p>svg>foreignObject>section table{display:block;width:100%;overflow:auto}div#p>svg>foreignObject>section table th{font-weight:600}div#p>svg>foreignObject>section table td,div#p>svg>foreignObject>section table th{padding:6px 13px;border:1px solid #dfe2e5}div#p>svg>foreignObject>section table tr{background-color:#fff;border-top:1px solid #c6cbd1}div#p>svg>foreignObject>section table tr:nth-child(2n){background-color:#f6f8fa}div#p>svg>foreignObject>section img{max-width:100%;box-sizing:initial;background-color:#fff}div#p>svg>foreignObject>section img[align=right]{padding-left:20px}div#p>svg>foreignObject>section img[align=left]{padding-right:20px}div#p>svg>foreignObject>section code{padding:.2em .4em;margin:0;font-size:85%;background-color:rgba(27,31,35,.05);border-radius:3px}div#p>svg>foreignObject>section pre{word-wrap:normal}div#p>svg>foreignObject>section pre>code{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:transparent;border:0}div#p>svg>foreignObject>section .highlight{margin-bottom:16px}div#p>svg>foreignObject>section .highlight pre{margin-bottom:0;word-break:normal}div#p>svg>foreignObject>section pre{padding:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f6f8fa;border-radius:3px}div#p>svg>foreignObject>section pre code{display:inline;max-width:auto;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:initial;border:0}div#p>svg>foreignObject>section .commit-tease-sha{display:inline-block;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:90%;color:#444d56}div#p>svg>foreignObject>section div#p>svg>foreignObject>section section.commit-tease-sha{--marpit-root-font-size:90%}div#p>svg>foreignObject>section .full-commit .btn-outline:not(:disabled):hover{color:#005cc5;border-color:#005cc5}div#p>svg>foreignObject>section .blob-wrapper{overflow-x:auto;overflow-y:hidden}div#p>svg>foreignObject>section .blob-wrapper-embedded{max-height:240px;overflow-y:auto}div#p>svg>foreignObject>section .blob-num{width:1%;min-width:50px;padding-right:10px;padding-left:10px;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:12px;line-height:20px;color:rgba(27,31,35,.3);text-align:right;white-space:nowrap;vertical-align:top;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}div#p>svg>foreignObject>section div#p>svg>foreignObject>section section.blob-num{--marpit-root-font-size:12px}div#p>svg>foreignObject>section .blob-num:hover{color:rgba(27,31,35,.6)}div#p>svg>foreignObject>section .blob-num:before{content:attr(data-line-number)}div#p>svg>foreignObject>section .blob-code{position:relative;padding-right:10px;padding-left:10px;line-height:20px;vertical-align:top}div#p>svg>foreignObject>section .blob-code-inner{overflow:visible;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:12px;color:#24292e;word-wrap:normal;white-space:pre}div#p>svg>foreignObject>section div#p>svg>foreignObject>section section.blob-code-inner{--marpit-root-font-size:12px}div#p>svg>foreignObject>section .pl-token.active,div#p>svg>foreignObject>section .pl-token:hover{cursor:pointer;background:#ffea7f}div#p>svg>foreignObject>section .tab-size[data-tab-size="1"]{-moz-tab-size:1;-o-tab-size:1;tab-size:1}div#p>svg>foreignObject>section .tab-size[data-tab-size="2"]{-moz-tab-size:2;-o-tab-size:2;tab-size:2}div#p>svg>foreignObject>section .tab-size[data-tab-size="3"]{-moz-tab-size:3;-o-tab-size:3;tab-size:3}div#p>svg>foreignObject>section .tab-size[data-tab-size="4"]{-moz-tab-size:4;-o-tab-size:4;tab-size:4}div#p>svg>foreignObject>section .tab-size[data-tab-size="5"]{-moz-tab-size:5;-o-tab-size:5;tab-size:5}div#p>svg>foreignObject>section .tab-size[data-tab-size="6"]{-moz-tab-size:6;-o-tab-size:6;tab-size:6}div#p>svg>foreignObject>section .tab-size[data-tab-size="7"]{-moz-tab-size:7;-o-tab-size:7;tab-size:7}div#p>svg>foreignObject>section .tab-size[data-tab-size="8"]{-moz-tab-size:8;-o-tab-size:8;tab-size:8}div#p>svg>foreignObject>section .tab-size[data-tab-size="9"]{-moz-tab-size:9;-o-tab-size:9;tab-size:9}div#p>svg>foreignObject>section .tab-size[data-tab-size="10"]{-moz-tab-size:10;-o-tab-size:10;tab-size:10}div#p>svg>foreignObject>section .tab-size[data-tab-size="11"]{-moz-tab-size:11;-o-tab-size:11;tab-size:11}div#p>svg>foreignObject>section .tab-size[data-tab-size="12"]{-moz-tab-size:12;-o-tab-size:12;tab-size:12}div#p>svg>foreignObject>section .task-list-item{list-style-type:none}div#p>svg>foreignObject>section .task-list-item+.task-list-item{margin-top:3px}div#p>svg>foreignObject>section .task-list-item input{margin:0 .2em .25em -1.6em;vertical-align:middle}div#p>svg>foreignObject>section .hljs{display:block;background:#fff;padding:.5em;color:#333;overflow-x:auto}div#p>svg>foreignObject>section .hljs-comment,div#p>svg>foreignObject>section .hljs-meta{color:#969896}div#p>svg>foreignObject>section .hljs-emphasis,div#p>svg>foreignObject>section .hljs-quote,div#p>svg>foreignObject>section .hljs-strong,div#p>svg>foreignObject>section .hljs-template-variable,div#p>svg>foreignObject>section .hljs-variable{color:#df5000}div#p>svg>foreignObject>section .hljs-keyword,div#p>svg>foreignObject>section .hljs-selector-tag,div#p>svg>foreignObject>section .hljs-type{color:#d73a49}div#p>svg>foreignObject>section .hljs-attribute,div#p>svg>foreignObject>section .hljs-bullet,div#p>svg>foreignObject>section .hljs-literal,div#p>svg>foreignObject>section .hljs-symbol{color:#0086b3}div#p>svg>foreignObject>section .hljs-name,div#p>svg>foreignObject>section .hljs-section{color:#63a35c}div#p>svg>foreignObject>section .hljs-tag{color:#333}div#p>svg>foreignObject>section .hljs-attr,div#p>svg>foreignObject>section .hljs-selector-attr,div#p>svg>foreignObject>section .hljs-selector-class,div#p>svg>foreignObject>section .hljs-selector-id,div#p>svg>foreignObject>section .hljs-selector-pseudo,div#p>svg>foreignObject>section .hljs-title{color:#6f42c1}div#p>svg>foreignObject>section .hljs-addition{color:#55a532;background-color:#eaffea}div#p>svg>foreignObject>section .hljs-deletion{color:#bd2c00;background-color:#ffecec}div#p>svg>foreignObject>section .hljs-link{text-decoration:underline}div#p>svg>foreignObject>section .hljs-number{color:#005cc5}div#p>svg>foreignObject>section .hljs-string{color:#032f62}div#p>svg>foreignObject>section svg[data-marp-fitting=svg]{max-height:563px}div#p>svg>foreignObject>section h1{color:#246;font-size:1.6em}div#p>svg>foreignObject>section h1,div#p>svg>foreignObject>section h2{border-bottom:none}div#p>svg>foreignObject>section h2{font-size:1.3em}div#p>svg>foreignObject>section h3{font-size:1.1em}div#p>svg>foreignObject>section h4{font-size:1.05em}div#p>svg>foreignObject>section h5{font-size:1em}div#p>svg>foreignObject>section h6{font-size:.9em}div#p>svg>foreignObject>section h1 strong,div#p>svg>foreignObject>section h2 strong,div#p>svg>foreignObject>section h3 strong,div#p>svg>foreignObject>section h4 strong,div#p>svg>foreignObject>section h5 strong,div#p>svg>foreignObject>section h6 strong{font-weight:inherit;color:#48c}div#p>svg>foreignObject>section hr{height:0;padding-top:.25em}div#p>svg>foreignObject>section pre{border:1px solid #999;line-height:1.15;overflow:visible}div#p>svg>foreignObject>section pre code svg[data-marp-fitting=svg]{max-height:529px}div#p>svg>foreignObject>section footer,div#p>svg>foreignObject>section header{margin:0;position:absolute;left:30px;color:hsla(0,0%,40%,.75);font-size:18px}div#p>svg>foreignObject>section header{top:21px}div#p>svg>foreignObject>section footer{bottom:21px}div#p>svg>foreignObject>section{align-items:stretch;background:#fff;display:flex;flex-direction:column;flex-wrap:nowrap;font-size:29px;height:720px;justify-content:center;padding:78.5px;width:1280px}div#p>svg>foreignObject>section{--marpit-root-font-size:29px}div#p>svg>foreignObject>section>:last-child,div#p>svg>foreignObject>section[data-footer]>:nth-last-child(2){margin-bottom:0}div#p>svg>foreignObject>section>:first-child,div#p>svg>foreignObject>section>header:first-child+*{margin-top:0}div#p>svg>foreignObject>section:after{position:absolute;padding:0;right:30px;bottom:21px;font-size:24px;color:#777}div#p>svg>foreignObject>section:after{--marpit-root-font-size:24px}div#p>svg>foreignObject>section.invert{background-color:#222;color:#e6eaf0}div#p>svg>foreignObject>section.invert:after{color:#999}div#p>svg>foreignObject>section.invert img{background-color:transparent}div#p>svg>foreignObject>section.invert a{color:#50b3ff}div#p>svg>foreignObject>section.invert h1{color:#a3c5e7}div#p>svg>foreignObject>section.invert h2,div#p>svg>foreignObject>section.invert h3,div#p>svg>foreignObject>section.invert h4,div#p>svg>foreignObject>section.invert h5{color:#ebeff5}div#p>svg>foreignObject>section.invert blockquote,div#p>svg>foreignObject>section.invert h6{border-color:#3d3f43;color:#939699}div#p>svg>foreignObject>section.invert h1 strong,div#p>svg>foreignObject>section.invert h2 strong,div#p>svg>foreignObject>section.invert h3 strong,div#p>svg>foreignObject>section.invert h4 strong,div#p>svg>foreignObject>section.invert h5 strong,div#p>svg>foreignObject>section.invert h6 strong{color:#7bf}div#p>svg>foreignObject>section.invert hr{background-color:#3d3f43}div#p>svg>foreignObject>section.invert footer,div#p>svg>foreignObject>section.invert header{color:hsla(0,0%,60%,.75)}div#p>svg>foreignObject>section.invert code,div#p>svg>foreignObject>section.invert kbd{background-color:#111}div#p>svg>foreignObject>section.invert kbd{border-color:#666;box-shadow:inset 0 -1px 0 #555;color:#e6eaf0}div#p>svg>foreignObject>section.invert table tr{background-color:#12181d;border-color:#60657b}div#p>svg>foreignObject>section.invert table tr:nth-child(2n){background-color:#1b2024}div#p>svg>foreignObject>section.invert table td,div#p>svg>foreignObject>section.invert table th{border-color:#5b5e61}div#p>svg>foreignObject>section.invert pre{background-color:#0a0e12;border-color:#777}div#p>svg>foreignObject>section.invert pre code{background-color:transparent}div#p>svg>foreignObject>section[data-color] h1,div#p>svg>foreignObject>section[data-color] h2,div#p>svg>foreignObject>section[data-color] h3,div#p>svg>foreignObject>section[data-color] h4,div#p>svg>foreignObject>section[data-color] h5,div#p>svg>foreignObject>section[data-color] h6{color:currentColor}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]{display:block!important;padding:0!important}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]:after,div#p>svg>foreignObject>section[data-marpit-advanced-background=background]:before,div#p>svg>foreignObject>section[data-marpit-advanced-background=content]:after,div#p>svg>foreignObject>section[data-marpit-advanced-background=content]:before{display:none!important}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container]{all:initial;display:flex;flex-direction:row;height:100%;overflow:hidden;width:100%}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container][data-marpit-advanced-background-direction=vertical]{flex-direction:column}div#p>svg>foreignObject>section[data-marpit-advanced-background=background][data-marpit-advanced-background-split]>div[data-marpit-advanced-background-container]{width:var(--marpit-advanced-background-split,50%)}div#p>svg>foreignObject>section[data-marpit-advanced-background=background][data-marpit-advanced-background-split=right]>div[data-marpit-advanced-background-container]{margin-left:calc(100% - var(--marpit-advanced-background-split, 50%))}div#p>svg>foreignObject>section[data-marpit-advanced-background=background]>div[data-marpit-advanced-background-container]>figure{all:initial;background-position:center;background-repeat:no-repeat;background-size:cover;flex:auto;margin:0}div#p>svg>foreignObject>section[data-marpit-advanced-background=content],div#p>svg>foreignObject>section[data-marpit-advanced-background=pseudo]{background:transparent!important}div#p>svg>foreignObject>section[data-marpit-advanced-background=pseudo],div#p>svg[data-marpit-svg]>foreignObject[data-marpit-advanced-background=pseudo]{pointer-events:none!important}div#p>svg>foreignObject>section[data-marpit-advanced-background-split]{width:100%;height:100%}</style></head><body><div class="bespoke-marp-osc"><button data-bespoke-marp-osc="prev" tabindex="-1" title="Previous slide">Previous slide</button><span data-bespoke-marp-osc="page"></span><button data-bespoke-marp-osc="next" tabindex="-1" title="Next slide">Next slide</button><button data-bespoke-marp-osc="fullscreen" tabindex="-1" title="Toggle fullscreen (f)">Toggle fullscreen</button><button data-bespoke-marp-osc="presenter" tabindex="-1" title="Open presenter view (p)">Open presenter view</button></div><div id="p"><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="1" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="1" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
 <h1>Treasure JavaScript 2020</h1>
 <footer>Treasure JavaScript 2020</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="2" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" data-theme="gaia" class="invert" data-marpit-pagination="2" data-marpit-pagination-total="7" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;--theme:gaia;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="2" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="2" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
 <h1>自己紹介</h1>
 <footer>Treasure JavaScript 2020</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" data-theme="gaia" class="invert" data-marpit-pagination="3" data-marpit-pagination-total="7" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;--theme:gaia;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="3" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
 <h1>自己紹介</h1>
 <ul>
+<li>名前
+<ul>
+<li>小菅 諒 (コスゲ リョウ)</li>
+</ul>
+</li>
 <li>年齢
 <ul>
-<li>1990/02/12 30歳</li>
+<li>30歳 (1990/02/12 )</li>
 </ul>
 </li>
 <li>所属
@@ -40,7 +46,121 @@
 </ul>
 <footer>Treasure JavaScript 2020</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" data-theme="gaia" class="invert" data-marpit-pagination="4" data-marpit-pagination-total="7" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;--theme:gaia;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="4" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>自己紹介（つづき）</h1>
+<ul>
+<li>fluct入社して1年10ヶ月くらい（中途入社です）
+<ul>
+<li>なんだかんだで4社目です</li>
+<li>前職でアプリ開発をしていて元々はfluctのお客さんでした</li>
+</ul>
+</li>
+<li>得意なフィールド
+<ul>
+<li>iOSアプリ（VGは特に人が少ない）</li>
+</ul>
+</li>
+<li>最近fluctのXDC事業のエンジニアリーダーになりました
+<ul>
+<li>興味ある人は話しかけてね！</li>
+</ul>
+</li>
+</ul>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="5" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>講義全体の流れ</h1>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="6" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>講義全体の流れ</h1>
+<p>皆さんには</p>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="7" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1><strong>treasure-voice</strong></h1>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="8" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>講義全体の流れ</h1>
+<h2>皆さんには</h2>
+<h2><strong>treasure-voice</strong></h2>
+<h2>を作ってもらいます</h2>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="9" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1><strong>treasure-voice</strong> is 何？</h1>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="10" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1><strong>treasure-voice</strong> is</h1>
+<p>Discordみたいなやつ</p>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="11" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="11" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1><strong>treasure-voice</strong> is</h1>
+<ul>
+<li>ユーザー登録が出来る</li>
+<li>ユーザーが部屋 (room)を 作れる / 編集できる / 削除できる</li>
+<li>部屋(room)で音声チャットができる</li>
+</ul>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="12" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="12" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>講義全体の流れ</h1>
+<p>各講義時間だけで作るのは不可能なので</p>
+<p>各講義では基礎となる技術を一緒に学んでいきます</p>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="13" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>講義全体の流れ</h1>
+<p>講義じゃない日などを使って</p>
+<p>追加機能の開発をしてもらえたらなと</p>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="14" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="14" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>講義全体の流れ</h1>
+<p>講師陣（というかVGエンジニア全員）は</p>
+<p>質問してくれたら喜んで一緒に考えてくれる（はず）なので</p>
+<p>講義じゃない日もどしどし連絡ください！</p>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="15" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="15" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>講義全体の流れ</h1>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">day</th>
+<th style="text-align:center">内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">8/1 (土)</td>
+<td style="text-align:center">フロントエンド講義 (今日はここ！)</td>
+</tr>
+<tr>
+<td style="text-align:center">8/8 (土)</td>
+<td style="text-align:center">バックエンド講義その1</td>
+</tr>
+<tr>
+<td style="text-align:center">8/15 (土)</td>
+<td style="text-align:center">バックエンド講義その2</td>
+</tr>
+<tr>
+<td style="text-align:center">8/17 (月) 午後から~</td>
+<td style="text-align:center">DB講義</td>
+</tr>
+</tbody>
+</table>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="16" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="16" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>講義全体の流れ</h1>
+<p>ということで今日はフロントエンドを楽しんでいきましょう！</p>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="17" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="17" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
 <h1>タイムテーブル</h1>
 <p>ざっくり今日の講義の流れの紹介</p>
 <ul>
@@ -50,9 +170,9 @@
 </ul>
 <footer>Treasure JavaScript 2020</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" data-theme="gaia" class="invert" data-marpit-pagination="5" data-marpit-pagination-total="7" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;--theme:gaia;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="18" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="18" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
 <h1>タイムテーブル（午前中）</h1>
-<p>（大体11時くらいだと過程）</p>
+<p>（大体11時15分くらいだと過程）</p>
 <p>JavaScriptを知ろう</p>
 <ul>
 <li>タイムテーブルの紹介とか（5min）</li>
@@ -61,7 +181,7 @@
 </ul>
 <footer>Treasure JavaScript 2020</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" data-theme="gaia" class="invert" data-marpit-pagination="6" data-marpit-pagination-total="7" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;--theme:gaia;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="19" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="19" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
 <h1>タイムテーブル（お昼後）</h1>
 <p>（大体14時くらいだと過程）</p>
 <p>JavaScriptを触ってみよう</p>
@@ -71,19 +191,774 @@
 </ul>
 <footer>Treasure JavaScript 2020</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" data-theme="gaia" class="invert" data-marpit-pagination="7" data-marpit-pagination-total="7" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;--theme:gaia;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="20" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="20" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
 <h1>タイムテーブル（おかし後）</h1>
 <p>（大体15時半くらいだと過程）</p>
 <p>実際にJavaScriptでサービスを作ってみよう</p>
 <ul>
 <li>Skyway使って1on1の音声通話サービス作ってみよう
 <ul>
-<li>ハンズオン（1h）</li>
-<li>+αで独自の機能を拡張してみよう（40min ~）</li>
+<li>ハンズオン（~ 1h）</li>
+<li>+αで独自の機能を拡張してみよう（残り時間）</li>
 </ul>
 </li>
 <li>今日のまとめ（10min）</li>
 </ul>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="21" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="21" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>質問ありますか？</h1>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="22" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="22" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>ではさっそく初めていきましょう</h1>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="23" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="23" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>フロントエンド講義</h1>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="24" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="24" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>フロントエンド講義</h1>
+<p>午前中は軽めにコミュニケーション取りながらやっていきましょう</p>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="25" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="25" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>フロントエンド講義</h1>
+<p>改めて午前中話すこと</p>
+<ul>
+<li>JavaScriptの歴史</li>
+<li>UI Frameworkなど最近のJavaScript周辺のお話</li>
+</ul>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="26" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="26" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>フロントエンド講義</h1>
+<p>まずは質問 <img class="emoji" draggable="false" alt="✋" src="https://twemoji.maxcdn.com/2/svg/270b.svg" data-marp-twemoji=""/></p>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="27" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="27" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>フロントエンド講義</h1>
+<p><strong>JavaScript</strong> 好きな人<img class="emoji" draggable="false" alt="✋" src="https://twemoji.maxcdn.com/2/svg/270b.svg" data-marp-twemoji=""/></p>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="28" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="28" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>フロントエンド講義</h1>
+<p>講義の中でいうとフロントエンドが一番得意だなって思う人 <img class="emoji" draggable="false" alt="✋" src="https://twemoji.maxcdn.com/2/svg/270b.svg" data-marp-twemoji=""/></p>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="29" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="29" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>JavaScriptの歴史</h1>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="30" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="30" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>JavaScriptの歴史</h1>
+<h2>1995年 誕生</h2>
+<ul>
+<li>Netscapeのブレンダン・アイクさん</li>
+<li>最初は <strong>LiveScript</strong> っていう名前だった</li>
+<li>Javaが当時めちゃくちゃ注目浴びていた
+<ul>
+<li>開発はサン・マイクロシステムズ(のちのオラクル)</li>
+<li>名前を <strong>JavaScript</strong> に改名</li>
+</ul>
+</li>
+</ul>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="31" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="31" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>JavaScriptの歴史</h1>
+<h2>1995年 IE3.0の登場</h2>
+<ul>
+<li>IEに <strong>JavaScript</strong> を搭載しようとしたが、Netscape社がライセンス提供しない</li>
+<li>IEは <strong>JavaScript</strong> に似た <strong>JScript</strong> という言語を作成
+<ul>
+<li>もちろん <strong>JavaScript</strong> と互換性ないので、どっちかでしか動かない</li>
+</ul>
+</li>
+</ul>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="32" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="32" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>JavaScriptの歴史</h1>
+<h2>1997年 仕様の標準化が進む</h2>
+<ul>
+<li>全ては <strong>JavaScript</strong> を標準化させるため</li>
+<li>国際標準化団体 ECMA に依頼をして標準化を進める
+<ul>
+<li>これがいわゆる <strong>ECMAScript</strong></li>
+<li><strong>JavaScript</strong> は <strong>ECMAScript</strong> に準拠しているという関係</li>
+</ul>
+</li>
+</ul>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="33" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="33" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>JavaScriptの歴史</h1>
+<h2>2000年代前半 仕様の標準化が進まない</h2>
+<ul>
+<li>第3版までは順調だった</li>
+<li>第4版あたりで各ベンダーで意見が異なり始める
+<ul>
+<li>第4版を認める <strong>Mozilla(元Netscape社)</strong> と認めない <strong>MicroSoft</strong></li>
+</ul>
+</li>
+</ul>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="34" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="34" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>JavaScriptの歴史</h1>
+<h2>2000年代前半 この頃のJavaScript</h2>
+<ul>
+<li>無駄なアニメーションを頑張るサイトがたくさん登場</li>
+<li>ブラウザのセキュリティガバガバ</li>
+<li>ここら辺で、ブラウザの「JavaScriptをオフにする」が流行る</li>
+<li>この時期に <strong>Flash</strong> + <strong>Action Script</strong>が主流になる
+<ul>
+<li>自分が最初に覚えた言語は <strong>Action Script</strong></li>
+</ul>
+</li>
+</ul>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="35" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="35" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>JavaScriptの歴史</h1>
+<h2>2000年代後半 Ajax技術の登場とGoogle Map</h2>
+<ul>
+<li>2005年、Googleが <strong>JavaScript</strong> の <strong>Ajax</strong> をフルに使った <strong>Google Map</strong> を発表</li>
+<li>続いて <strong>Gmail</strong> なども登場</li>
+<li><strong>JavaScript</strong> の存在感が改めて大きくなる</li>
+<li>この時代から<strong>prototype.js</strong> や <strong>jQuery</strong>が出てきて、より簡単によりリッチに</li>
+</ul>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="36" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="36" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>JavaScriptの歴史</h1>
+<h2>2000年代後半 V8エンジンの登場</h2>
+<ul>
+<li><strong>Google Chrome</strong>が世に公開される</li>
+<li>V8エンジン
+<ul>
+<li>JIT(Just In Time) Virtual Machine</li>
+<li>JavaScriptエンジン</li>
+</ul>
+</li>
+<li>要はめちゃくちゃ早く <strong>JavaScript</strong> を動かすエンジン
+<ul>
+<li>これで <strong>JavaScript</strong> は遅いという通説を覆すことになる</li>
+</ul>
+</li>
+</ul>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="37" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="37" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>JavaScriptの歴史</h1>
+<h2>2009年 Node.jsの登場</h2>
+<ul>
+<li>元々 <strong>JavaScript</strong> はモジュールが使えなかった
+<ul>
+<li>新しい仕様を作ろうよということで <strong>CommonJS</strong> なる仕様が誕生
+<ul>
+<li>ここら辺でモジュール化の話が進む</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>V8エンジンで動作する</li>
+<li><strong>Node.js</strong> がゴリゴリに独自開発する
+<ul>
+<li>結果 <strong>Node.js</strong> の独自開発が <strong>CommonJS</strong> として取り扱われるようになる</li>
+</ul>
+</li>
+<li>一緒に <strong>npm</strong> などのツールのバージョン管理をするモノが誕生してくる</li>
+</ul>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="38" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="38" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>JavaScriptの歴史</h1>
+<h2>その後 ECMAScriptは...</h2>
+<ul>
+<li>最新はES10(ECMAScript2019)
+<ul>
+<li>対応しているブラウザもあるけどないブラウザもある</li>
+<li>JavaScriptゴリゴリのWebサービス作るならまずはどのブラウザのどのバージョンかを決める</li>
+</ul>
+</li>
+<li>せっかくなら最新版使いたいよね？
+<ul>
+<li>トランスコンパイラの登場</li>
+</ul>
+</li>
+</ul>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="39" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="39" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>最近のJavaScript周辺のお話</h1>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="40" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="40" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>最近のJavaScript周辺のお話</h1>
+<h2>Babelの登場</h2>
+<ul>
+<li>ES6以降で書いたJavaScriptをES5に変換してくれる
+<ul>
+<li>いい感じにWebpackと連携すると変換して吐き出してくれる</li>
+</ul>
+</li>
+<li>ただこれのおかげで書いているソースコードと本番で動くコードが違くてバグ見つけるの大変になった経験あり</li>
+</ul>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="41" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="41" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>最近のJavaScript周辺のお話</h1>
+<h2>ビルドツール、タスクランナー</h2>
+<ul>
+<li><strong>CommonJS</strong>の仕様をブラウザ上でも有効にしたいよねって気持ちが強くなる
+<ul>
+<li>ここでビルドツールの<strong>browserify</strong>、<strong>Webpack</strong>が誕生</li>
+</ul>
+</li>
+<li>このビルドツールを使ったタスクを自動化したいよねって気持ちが強くなる
+<ul>
+<li>タスクランナーの<strong>Grunt</strong>、<strong>Gulp</strong>たちが誕生</li>
+</ul>
+</li>
+<li>この辺りでツール選定がカオスになる</li>
+</ul>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="42" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="42" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>最近のJavaScript周辺のお話</h1>
+<h2>altJSの登場</h2>
+<ul>
+<li><strong>alternative JavaScript</strong>
+<ul>
+<li>altJSで書かれたプログラムをコンパイルするとJavaScriptコードを生成することが出来る</li>
+</ul>
+</li>
+</ul>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="43" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="43" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>最近のJavaScript周辺のお話</h1>
+<h2>altJSの登場</h2>
+<ul>
+<li>TypeScript
+<ul>
+<li>Microsoftが作った</li>
+<li>静的型付け</li>
+<li>個人的にはすごい好き</li>
+</ul>
+</li>
+<li>CoffeeScript
+<ul>
+<li>少ないコード量でコーディング出来る</li>
+<li>RubyとかPythonにインスパイア</li>
+</ul>
+</li>
+</ul>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="44" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="44" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>最近のJavaScript周辺のお話</h1>
+<h2>frameworkの登場</h2>
+<ul>
+<li>そりゃこれだけJavaScript動くなら、標準化したくなってきますよね</li>
+<li>ということでframeworkの登場</li>
+</ul>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="45" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="45" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>最近のJavaScript周辺のお話</h1>
+<h2>React (star: 153k)</h2>
+<ul>
+<li>Facebook社が開発</li>
+<li>UI宣言周りがお仕事、routerとかRedux周りはセットで語られるけどなくても動く</li>
+<li>2015年にオープンソース化</li>
+<li>Next.jsというフルスタック版もある</li>
+</ul>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="46" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="46" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>最近のJavaScript周辺のお話</h1>
+<h2>Angular (star: 63.8k)</h2>
+<ul>
+<li>Googleさんとコミュニティによって作成</li>
+<li>v1のことをAngularJS、v2以降をAngularと呼ぶことになった</li>
+<li>名前似てるけどプロダクトとしては別物になる
+<ul>
+<li>AngularJSは来年あたりでサポート終了となる</li>
+</ul>
+</li>
+<li>TypeScriptを完全サポート</li>
+</ul>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="47" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="47" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>最近のJavaScript周辺のお話</h1>
+<h2>Vue.js (star: 169k)</h2>
+<ul>
+<li>GoogleのAngularJSを開発したエヴァン・ヨーさんが作成
+<ul>
+<li>Angularの本当に好きだった部分を抽出して、余分な概念なしに本当に軽いものを作ることができたらどうだろうか？」</li>
+</ul>
+</li>
+<li>Nuxt.jsというフルスタック版もある</li>
+</ul>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="48" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="48" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>フロントエンド講義</h1>
+<h2>午前の部のまとめ</h2>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="49" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="49" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>フロントエンド講義</h1>
+<h2>午前の部のまとめ</h2>
+<ul>
+<li>歴史を知ると親しみを覚えるよね？</li>
+<li>どういう背景があって開発されたかを知ると選択の際に納得度が増す
+<ul>
+<li>もちろん使いたいから / 流行ってるからというのも大事</li>
+</ul>
+</li>
+</ul>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="50" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="50" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>フロントエンド講義</h1>
+<p>午後はソースコードを交えつつ、理解を深めていきます！</p>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="51" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="51" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>フロントエンド講義</h1>
+<p>改めて午後やること</p>
+<ul>
+<li>JavaScriptのtips紹介
+<ul>
+<li>プリミティブ型とオブジェクト型</li>
+<li>event loop</li>
+<li>Promise と async await</li>
+<li>navigator.mediaDevices.getUserMedia</li>
+</ul>
+</li>
+<li>おかし後にやるやつの準備
+<ul>
+<li>SkyWayのアカウント作成</li>
+</ul>
+</li>
+</ul>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="52" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="52" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>JavaScriptのtips紹介</h1>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="53" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="53" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>JavaScriptのtips紹介</h1>
+<p>JavaScriptは色々と不思議な動きをする言語なので</p>
+<p>しっかり動作確認をした上で確かめていきましょう</p>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="54" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="54" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>JavaScriptのtips紹介</h1>
+<h2>プリミティブ型とオブジェクト型</h2>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="55" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="55" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>プリミティブ型とオブジェクト型</h1>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="56" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="56" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>プリミティブ型とオブジェクト型</h1>
+<ul>
+<li>プリミティブ (primitive) 型
+<ul>
+<li>メソッドを持たないデータのこと</li>
+<li>オブジェクトじゃない</li>
+<li>全てのプリミティブ型がイミュータブル (immutable)</li>
+</ul>
+</li>
+</ul>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="57" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="57" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>プリミティブ型とオブジェクト型</h1>
+<ul>
+<li>プリミティブ (primitive) 型
+<ul>
+<li>文字列</li>
+<li>数字 (BidInt)</li>
+<li>真偽値</li>
+<li>undefined</li>
+<li>symbol (ES7から)</li>
+</ul>
+</li>
+</ul>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="58" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="58" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>プリミティブ型とオブジェクト型</h1>
+<ul>
+<li>オブジェクト (object) 型
+<ul>
+<li>データとそのデータをやりとりするための命令が入ったデータ構造</li>
+</ul>
+</li>
+</ul>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="59" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="59" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>プリミティブ型</h1>
+<pre><code class="language-js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">let</span> bar = <span class="hljs-string">&quot;hoge&quot;</span>; <span class="hljs-comment">// 文字列</span>
+<span class="hljs-built_in">console</span>.log(bar);   <span class="hljs-comment">// hoge</span>
+bar.toUpperCase();  <span class="hljs-comment">// &lt;- エラー起きない？</span>
+<span class="hljs-built_in">console</span>.log(bar);   <span class="hljs-comment">// ???</span>
+</span></span></foreignObject></svg></code></pre>
+<p>なにが起きているのか<img class="emoji" draggable="false" alt="🤔" src="https://twemoji.maxcdn.com/2/svg/1f914.svg" data-marp-twemoji=""/></p>
+<p><a href="https://jsfiddle.net/ryokosuge_vg/bv3zrpm5">https://jsfiddle.net/ryokosuge_vg/bv3zrpm5</a></p>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="60" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="60" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>プリミティブ型</h1>
+<ul>
+<li>JavaScriptには <strong>プリミティブラッパーオブジェクト</strong> という概念があります
+<ul>
+<li><code>null</code>と<code>undefined</code>を除く</li>
+</ul>
+</li>
+<li>プリミティブ型からプロパティやメソッドにアクセスする場合、一時的にラッパーオブジェクトに変換されます</li>
+</ul>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="61" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="61" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>プリミティブ型</h1>
+<h2><strong>プリミティブラッパーオブジェクト</strong></h2>
+<ul>
+<li>String
+<ul>
+<li>文字列</li>
+</ul>
+</li>
+<li>Number
+<ul>
+<li>数値</li>
+</ul>
+</li>
+<li>BidInt
+<ul>
+<li>巨大整数</li>
+</ul>
+</li>
+<li>Boolean
+<ul>
+<li>真偽値</li>
+</ul>
+</li>
+</ul>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="62" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="62" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>プリミティブ型</h1>
+<h2>つまり</h2>
+<pre><code class="language-js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">let</span> bar = <span class="hljs-string">&quot;hoge&quot;</span>; <span class="hljs-comment">// 文字列</span>
+bar.length; <span class="hljs-comment">// プロパティ</span>
+bar.toUpperCase(); <span class="hljs-comment">// メソッド</span>
+</span></span></foreignObject></svg></code></pre>
+<h2>こう</h2>
+<pre><code class="language-js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">let</span> bar = <span class="hljs-string">&quot;hoge&quot;</span>; <span class="hljs-comment">// 文字列</span>
+<span class="hljs-keyword">new</span> <span class="hljs-built_in">String</span>(bar).length; <span class="hljs-comment">// プロパティ</span>
+<span class="hljs-keyword">new</span> <span class="hljs-built_in">String</span>(bar).toUpperCase(); <span class="hljs-comment">// メソッド</span>
+</span></span></foreignObject></svg></code></pre>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="63" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="63" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>オブジェクト型</h1>
+<pre><code class="language-js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">const</span> foo = { <span class="hljs-attr">bar</span>: <span class="hljs-string">&#x27;hoge&#x27;</span> };
+<span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">typeof</span> foo); <span class="hljs-comment">// object</span>
+
+foo.bar = <span class="hljs-string">&#x27;hogehoge&#x27;</span>;
+<span class="hljs-built_in">console</span>.log(foo.bar); <span class="hljs-comment">// hogehoge</span>
+
+<span class="hljs-keyword">const</span> bar = foo;
+bar.bar = <span class="hljs-string">&#x27;hoge&#x27;</span>;
+
+<span class="hljs-built_in">console</span>.log(bar.bar); <span class="hljs-comment">// hoge</span>
+<span class="hljs-built_in">console</span>.log(foo.bar); <span class="hljs-comment">// ???</span>
+</span></span></foreignObject></svg></code></pre>
+<p><a href="https://jsfiddle.net/ryokosuge_vg/vkjL7mr3">https://jsfiddle.net/ryokosuge_vg/vkjL7mr3</a></p>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="64" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="64" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>プリミティブ型とオブジェクト型</h1>
+<ul>
+<li>プリミティブ型は値渡し</li>
+<li>オブジェクト型は参照渡し</li>
+</ul>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="65" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="65" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>プリミティブ型とオブジェクト型</h1>
+<h2>チャレンジしてみよう</h2>
+<p>branch切ってPR出してください</p>
+<p><a href=""></a></p>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="66" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="66" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>JavaScriptのtips紹介</h1>
+<h2>event loop</h2>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="67" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="67" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>event loop</h1>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="68" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="68" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>event loop</h1>
+<ul>
+<li>JavaScriptはsingle thread
+<ul>
+<li>無限ループでひたすらタスクをこなしていく</li>
+<li>DOMの更新もタスクの1つ</li>
+</ul>
+</li>
+</ul>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="69" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="69" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>event loop</h1>
+<pre><code class="language-html"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>event loop<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+        <span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>;
+        <span class="hljs-keyword">let</span> start = <span class="hljs-built_in">Date</span>.now();
+        <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">count</span>(<span class="hljs-params"></span>) </span>{
+            <span class="hljs-keyword">do</span> {
+                i++;
+            } <span class="hljs-keyword">while</span>(i % <span class="hljs-number">1e9</span> !== <span class="hljs-number">0</span>);
+            alert(<span class="hljs-string">&quot;Done in &quot;</span> + (<span class="hljs-built_in">Date</span>.now() - start) + <span class="hljs-string">&#x27;ms&#x27;</span>);
+        };
+        count();
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</span></span></foreignObject></svg></code></pre>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="70" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="70" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>event loop</h1>
+<ul>
+<li><code>function count()</code>がインクリメント処理をし続けている</li>
+<li><code>count()</code>がblockしてしまい処理が終わるまでDOMが描画されない状態になってしまった</li>
+<li>これを避けるためにタスクを分割して回避していきましょう</li>
+</ul>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="71" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="71" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>event loop</h1>
+<pre><code class="language-html"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>event loop<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+        <span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>;
+        <span class="hljs-keyword">let</span> start = <span class="hljs-built_in">Date</span>.now();
+        <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">count</span>(<span class="hljs-params"></span>) </span>{
+            <span class="hljs-keyword">do</span> {
+                i++;
+            } <span class="hljs-keyword">while</span>(i % <span class="hljs-number">1e6</span> != <span class="hljs-number">0</span>);
+            <span class="hljs-keyword">if</span> (i === <span class="hljs-number">1e9</span>) {
+                alert(<span class="hljs-string">&quot;Done in &quot;</span> + (<span class="hljs-built_in">Date</span>.now() - start) + <span class="hljs-string">&#x27;ms&#x27;</span>);
+            } <span class="hljs-keyword">else</span> {
+                <span class="hljs-built_in">setTimeout</span>(count); <span class="hljs-comment">// setTimeoutでスケジュールする</span>
+            }
+        };
+        count();
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</span></span></foreignObject></svg></code></pre>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="72" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="72" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>event loop</h1>
+<h2>チャレンジしてみよう</h2>
+<p>branch切ってPR出してください</p>
+<p><a href=""></a></p>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="73" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="73" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>JavaScriptのtips紹介</h1>
+<h2>Promiseとasync await</h2>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="74" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="74" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>Promiseとasync await</h1>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="75" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="75" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>Promise</h1>
+<ul>
+<li>非同期処理で使われるオブジェクト</li>
+</ul>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="76" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="76" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>Promise</h1>
+<p>こんなのダサいよね</p>
+<pre><code class="language-js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>doAsyncTask1(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">result</span>) </span>{
+    doAsyncTask2(result, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">newResult</span>) </span>{
+        doAsyncTask3(newResult, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">finalResult</span>) </span>{
+            <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&#x27;final result: &#x27;</span> + finalResult);
+        }, failureTask);
+    }, failureTask);
+}, failureTask);
+</span></span></foreignObject></svg></code></pre>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="77" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="77" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>Promise</h1>
+<p>こうできる</p>
+<pre><code class="language-js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>doAsyncTask1().then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">result</span>) =&gt; </span>{
+    <span class="hljs-keyword">return</span> doAsyncTask2(result);
+}).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">newResult</span>) =&gt; </span>{
+    <span class="hljs-keyword">return</span> doAsyncTask3(newResult);
+}).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">finalResult</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&#x27;final result: &#x27;</span> + finalResult);
+}).catch(failureTask);
+</span></span></foreignObject></svg></code></pre>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="78" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="78" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>Promiseと async / await</h1>
+<p>ECMAScript2017で追加された async / await使うとこうできる</p>
+<pre><code class="language-js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>(<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">try</span> {
+        <span class="hljs-keyword">const</span> result = <span class="hljs-keyword">await</span> doAsyncTask1();
+        <span class="hljs-keyword">const</span> newResult = <span class="hljs-keyword">await</span> doAsyncTask2(result);
+        <span class="hljs-keyword">const</span> finalResult = <span class="hljs-keyword">await</span> doAsyncTask3(newResult);
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&#x27;final result: &#x27;</span> + finalResult);
+    } <span class="hljs-keyword">catch</span>(error) {
+        failureTask(error);
+    }
+})();
+</span></span></foreignObject></svg></code></pre>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="79" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="79" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>JavaScriptのtips紹介</h1>
+<h2>navigator.mediaDevices.getUserMedia</h2>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="80" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="80" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>navigator.mediaDevices.getUserMedia</h1>
+<p>これに関しては後ほど触るので概念だけの説明</p>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="81" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="81" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>navigator.mediaDevices.getUserMedia</h1>
+<ul>
+<li>ユーザーのカメラやマイクの <strong>「メディアストリーム」</strong> を取得する
+<ul>
+<li>audioとvideoの有効 / 無効を指定して取得することができる</li>
+</ul>
+</li>
+</ul>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="82" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="82" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>navigator.mediaDevices.getUserMedia</h1>
+<p>audioとvideoを指定する場合</p>
+<pre><code class="language-js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">const</span> mediaStream = <span class="hljs-keyword">await</span> navigator.mediaDevices.getUserMedia({ <span class="hljs-attr">audio</span>: <span class="hljs-literal">true</span>, <span class="hljs-attr">video</span>: <span class="hljs-literal">true</span> })
+</span></span></foreignObject></svg></code></pre>
+<p>videoの制約を指定する場合</p>
+<pre><code class="language-js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">const</span> mediaStream = <span class="hljs-keyword">await</span> navigator.mediaDevices.getUserMedia({
+    <span class="hljs-attr">audio</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">video</span>: {
+        <span class="hljs-attr">width</span>: <span class="hljs-number">1200</span>,
+        <span class="hljs-attr">height</span>: <span class="hljs-number">800</span>
+    }
+})
+</span></span></foreignObject></svg></code></pre>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="83" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="83" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>navigator.mediaDevices.getUserMedia</h1>
+<h2>実際に使ってみよう</h2>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="84" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="84" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>navigator.mediaDevices.getUserMedia</h1>
+<h2>実際に使ってみよう</h2>
+<pre><code class="language-html"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-comment">&lt;!-- index.html --&gt;</span>
+<span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;utf8&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;viewport&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>GetUserMedia<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Hello World!<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">video</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;my-video&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;400px&quot;</span> <span class="hljs-attr">autoplay</span> <span class="hljs-attr">muted</span> <span class="hljs-attr">playsinline</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">video</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;index.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</span></span></foreignObject></svg></code></pre>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="85" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="85" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>navigator.mediaDevices.getUserMedia</h1>
+<h2>実際に使ってみよう</h2>
+<pre><code class="language-js"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-comment">// index.js</span>
+(<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">const</span> localStream = <span class="hljs-keyword">await</span> navigator.mediaDevices.getUserMedia({ <span class="hljs-attr">audio</span>: <span class="hljs-literal">true</span>, <span class="hljs-attr">video</span>: <span class="hljs-literal">true</span> });
+    <span class="hljs-keyword">const</span> videoElement = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&#x27;my-video&#x27;</span>);
+    videoElement.srcObject = localStream;
+    videoElement.play();
+})();
+</span></span></foreignObject></svg></code></pre>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="86" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="86" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>こんな許諾が出てきます</h1>
+<p><img src="./assets/getUserMedia.png" alt="" /></p>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="87" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="87" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>おかし後にやるやつの準備</h1>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="88" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="88" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>フロントエンド講義</h1>
+<p>おかし後は実際に1on1で音声通話出来るサービス作っていくよ</p>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="89" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="89" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>フロントエンド講義</h1>
+<p>改めておかし後にやること</p>
+<ul>
+<li>SkyWayを使ってハンズオン</li>
+<li>+αでサービスを強化してみよう</li>
+</ul>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="90" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="90" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>SkyWayを使ってハンズオン</h1>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="91" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="91" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>+αでサービスを強化してみよう</h1>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="92" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="92" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
+<h1>フロントエンド講義まとめ</h1>
+<footer>Treasure JavaScript 2020</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="93" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="93" data-marpit-pagination-total="93" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
 <footer>Treasure JavaScript 2020</footer>
 </section>
 <script>!function(){"use strict";let t=void 0;function e(e){let r=!1;Array.from(document.querySelectorAll("svg[data-marpit-svg]"),i=>{const{children:o,clientHeight:n,clientWidth:a,viewBox:s}=i;i.style.transform||(i.style.transform="translateZ(0)");const l=e||window!==window.parent&&window.parent.marpitSVGPolyfillZoomFactor||i.currentScale||1;t!==l&&(t=l,r=l);const c=s.baseVal.width/l,d=s.baseVal.height/l,p=Math.min(n/d,a/c);for(let t=0;t<o.length;t+=1){const{style:e}=o[t].firstChild;e.position||(e.position="fixed"),e.transformOrigin||(e.transformOrigin="0 0"),e.transform=`scale(${p}) translateZ(0)`}}),!1!==r&&Object.defineProperty(window,"marpitSVGPolyfillZoomFactor",{configurable:!0,value:r})}const r=(t,e,r)=>{if(t.getAttribute(e)!==r)return t.setAttribute(e,r),!0};function i(t=!0){for(const t of"Apple Computer, Inc."===navigator.vendor?[e]:[])t();Array.from(document.querySelectorAll('svg[data-marp-fitting="svg"]'),t=>{var e;const i=t.firstChild,o=i.firstChild,{scrollWidth:n,scrollHeight:a}=o;let s,l=1;if(t.hasAttribute("data-marp-fitting-code")&&(s=null===(e=t.parentElement)||void 0===e?void 0:e.parentElement),t.hasAttribute("data-marp-fitting-math")&&(s=t.parentElement),s){const t=getComputedStyle(s),e=Math.ceil(s.clientWidth-parseFloat(t.paddingLeft||"0")-parseFloat(t.paddingRight||"0"));e&&(l=e)}const c=Math.max(n,l),d=Math.max(a,1),p=`0 0 ${c} ${d}`;r(i,"width",""+c),r(i,"height",""+d),r(t,"preserveAspectRatio",getComputedStyle(t).getPropertyValue("--preserve-aspect-ratio")||"xMinYMin meet"),r(t,"viewBox",p)&&t.classList.toggle("__reflow__")}),t&&window.requestAnimationFrame(()=>i(t))}!function(){if("undefined"==typeof window)throw new Error("Marp Core's browser script is valid only in browser context.");window.marpCoreBrowserScript?console.warn("Marp Core's browser script has already executed."):(Object.defineProperty(window,"marpCoreBrowserScript",{value:!0}),i())}()}();

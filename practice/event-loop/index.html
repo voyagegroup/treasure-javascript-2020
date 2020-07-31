@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <title>event loop</title>
+</head>
+<body>
+    <button id="heavyCount">click</button>
+    <div id="counter">0</div>
+    <script>
+        const button = document.getElementById('heavyCount');
+        const counter = document.getElementById('counter');
+        button.addEventListener('click', function() {
+            let count = 0;
+            let times = 1000;
+            function loop() {
+                if (count++ < times) {
+                    counter.innerHTML = count;
+                    loop();
+                } else {
+                    alert("Done");
+                }
+            }
+            loop();
+        });
+    </script>
+</body>
+</html>
