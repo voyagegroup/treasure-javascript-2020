@@ -102,9 +102,9 @@ Discordみたいなやつ
 
 # 講義全体の流れ
 
-講師陣（というかVGエンジニア全員）は
+講師陣 (というかVGエンジニア全員) は
 
-質問してくれたら喜んで一緒に考えてくれる（はず）なので
+質問してくれたら喜んで一緒に考えてくれる (はず) なので
 
 講義じゃない日もどしどし連絡ください！
 
@@ -131,31 +131,31 @@ Discordみたいなやつ
 
 ざっくり今日の講義の流れの紹介
 
-- 午前中（11時 ~ 12時）
-- お昼後（14時 ~ 15時）
-- おかし後（15時30分 ~ 18時）
+- 午前中 (11時 ~ 12時)
+- お昼後 (13時半 ~ 15時)
+- おかし後 (15時30分 ~ 18時)
 
 ----
 
 # タイムテーブル（午前中）
 
-（大体11時15分くらいだと過程）
+(大体11時15分くらいだと過程)
 
 JavaScriptを知ろう
 
-- タイムテーブルの紹介とか（5min）
-- JavaScriptの歴史（15min）
-- UI Frameworkたちのお話（10min）
+- タイムテーブルの紹介とか (5min)
+- JavaScriptの歴史 (15min)
+- UI Frameworkなど最近のJavaScript周辺のお話 (10min)
 
 ----
 
 # タイムテーブル（お昼後）
 
-（大体14時くらいだと過程）
+（大体13時半くらいだと過程）
 
 JavaScriptを触ってみよう
 
-- JavaScriptのtips紹介（40min）
+- JavaScriptのtips紹介（60min）
 - おかし後にやるやつの準備（5min）
 
 ----
@@ -229,8 +229,11 @@ JavaScriptを触ってみよう
 - Netscapeのブレンダン・アイクさん
 - 最初は **LiveScript** っていう名前だった
 - Javaが当時めちゃくちゃ注目浴びていた
-    - 開発はサン・マイクロシステムズ(のちのオラクル)
+    - 開発はサン・マイクロシステムズ
+        - (のちのオラクル)
     - 名前を **JavaScript** に改名
+
+![bg right:40%](https://upload.wikimedia.org/wikipedia/commons/d/d1/Brendan_Eich_Mozilla_Foundation_official_photo.jpg)
 
 ----
 
@@ -241,6 +244,8 @@ JavaScriptを触ってみよう
 - IEに **JavaScript** を搭載しようとしたが、Netscape社がライセンス提供しない
 - IEは **JavaScript** に似た **JScript** という言語を作成
     - もちろん **JavaScript** と互換性ないので、どっちかでしか動かない
+
+![bg right:40% 90%](https://upload.wikimedia.org/wikipedia/en/thumb/c/c5/Internet_Explorer_3_on_Windows_95.png/300px-Internet_Explorer_3_on_Windows_95.png)
 
 ----
 
@@ -253,6 +258,8 @@ JavaScriptを触ってみよう
     - これがいわゆる **ECMAScript**
     - **JavaScript** は **ECMAScript** に準拠しているという関係
 
+![bg right:40% 80%](https://www.ecma-international.org/ecma-402/4.0/img/ecma-logo.jpg)
+
 ----
 
 # JavaScriptの歴史
@@ -262,6 +269,8 @@ JavaScriptを触ってみよう
 - 第3版までは順調だった
 - 第4版あたりで各ベンダーで意見が異なり始める
     - 第4版を認める **Mozilla(元Netscape社)** と認めない **MicroSoft**
+
+![bg right:40% 80%](https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE3fjPH?ver=aa35&q=90&m=6&h=195&w=348&b=%23FFFFFFFF&l=f&o=t&aim=true)
 
 ----
 
@@ -275,6 +284,8 @@ JavaScriptを触ってみよう
 - この時期に **Flash** + **Action Script**が主流になる
     - 自分が最初に覚えた言語は **Action Script**
 
+![bg right:40% 90%](https://cdn.vox-cdn.com/thumbor/wwyu9K6Ztur2sUMXg1FfvuBwGRo=/0x22:600x422/1400x1400/filters:focal(0x22:600x422):format(jpeg)/cdn.vox-cdn.com/assets/787094/adobe-flash-logo.jpg)
+
 ----
 
 # JavaScriptの歴史
@@ -285,6 +296,8 @@ JavaScriptを触ってみよう
 - 続いて **Gmail** なども登場
 - **JavaScript** の存在感が改めて大きくなる
 - この時代から**prototype.js** や **jQuery**が出てきて、より簡単によりリッチに
+
+![bg right:40% 80%](https://image.itmedia.co.jp/news/articles/2002/07/yu_logo.jpg)
 
 ----
 
@@ -299,6 +312,8 @@ JavaScriptを触ってみよう
 - 要はめちゃくちゃ早く **JavaScript** を動かすエンジン
     - これで **JavaScript** は遅いという通説を覆すことになる
 
+![bg right:40% 80%](https://appetiser.com.au/wp-content/uploads/2019/03/Google-V8-1280x720.png)
+
 ----
 
 # JavaScriptの歴史
@@ -306,12 +321,12 @@ JavaScriptを触ってみよう
 ## 2009年 Node.jsの登場
 
 - 元々 **JavaScript** はモジュールが使えなかった
-    - 新しい仕様を作ろうよということで **CommonJS** なる仕様が誕生
-        - ここら辺でモジュール化の話が進む
-- V8エンジンで動作する
+- 新しい仕様を作ろうよということで **CommonJS** なる仕様が誕生
 - **Node.js** がゴリゴリに独自開発する
     - 結果 **Node.js** の独自開発が **CommonJS** として取り扱われるようになる
 - 一緒に **npm** などのツールのバージョン管理をするモノが誕生してくる
+
+![bg right:30% 70%](https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg)
 
 ----
 
@@ -324,6 +339,8 @@ JavaScriptを触ってみよう
     - JavaScriptゴリゴリのWebサービス作るならまずはどのブラウザのどのバージョンかを決める
 - せっかくなら最新版使いたいよね？
     - トランスコンパイラの登場
+
+![bg right:40% 80%](https://blog.moddable.com/blog/wp-content/uploads/2019/03/ecma-moddable.png)
 
 ----
 
@@ -339,6 +356,8 @@ JavaScriptを触ってみよう
     - いい感じにWebpackと連携すると変換して吐き出してくれる
 - ただこれのおかげで書いているソースコードと本番で動くコードが違くてバグ見つけるの大変になった経験あり
 
+![bg right:40% 80%](https://qiita-image-store.s3.amazonaws.com/0/11493/c6f629f7-7eae-c21a-9bf5-856c8d46841e.png)
+
 ----
 
 # 最近のJavaScript周辺のお話
@@ -350,6 +369,9 @@ JavaScriptを触ってみよう
 - このビルドツールを使ったタスクを自動化したいよねって気持ちが強くなる
     - タスクランナーの**Grunt**、**Gulp**たちが誕生
 - この辺りでツール選定がカオスになる
+
+![bg right:40% 90%](https://www.expexp.jp/wp/wp-content/uploads/2018/04/eyecatch-webpack.png)
+![bg right:40% 90%](https://satoyan419.com/wp/wp-content/uploads/2016/01/2016-01-05_gulp-600x315.png)
 
 ----
 
@@ -374,6 +396,9 @@ JavaScriptを触ってみよう
     - 少ないコード量でコーディング出来る
     - RubyとかPythonにインスパイア
 
+![bg right:40% 90%](https://cdn-images-1.medium.com/max/2000/1*D8Wwwce8wS3auLAiM3BQKA.jpeg)
+![bg right:40% 90%](https://lh3.googleusercontent.com/proxy/0zyx46Lrs5ltE-uMzTiP49EpHEZg458yFos1pmqf7k2zYow6juAltyMSXb8Etm6Ug0YyVeXgHp9O34uxbxlbWJUm12tAHw0hMPTisYR2HI2w5g-ADR7aJ5_dO999SyXY)
+
 ----
 
 # 最近のJavaScript周辺のお話
@@ -394,6 +419,8 @@ JavaScriptを触ってみよう
 - 2015年にオープンソース化
 - Next.jsというフルスタック版もある
 
+![bg right:40% 80%](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png)
+
 ----
 
 # 最近のJavaScript周辺のお話
@@ -406,6 +433,8 @@ JavaScriptを触ってみよう
     - AngularJSは来年あたりでサポート終了となる
 - TypeScriptを完全サポート
 
+![bg right:40% 60%](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/250px-Angular_full_color_logo.svg.png)
+
 ----
 
 # 最近のJavaScript周辺のお話
@@ -415,6 +444,8 @@ JavaScriptを触ってみよう
 - GoogleのAngularJSを開発したエヴァン・ヨーさんが作成
     - Angularの本当に好きだった部分を抽出して、余分な概念なしに本当に軽いものを作ることができたらどうだろうか？」
 - Nuxt.jsというフルスタック版もある
+
+![bg right:40% 60%](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Vue.png/215px-Vue.png)
 
 ----
 
@@ -451,6 +482,7 @@ JavaScriptを触ってみよう
     - navigator.mediaDevices.getUserMedia
 - おかし後にやるやつの準備
     - SkyWayのアカウント作成
+    - Visual Studio Codeのおすすめ
 
 ----
 
@@ -688,6 +720,14 @@ branch切ってPR出してください
 
 ----
 
+# event loop
+
+setTimeoutの動きでおすすめのサイトがあるので一緒に見てみましょう
+
+https://dev.to/lydiahallie/javascript-visualized-event-loop-3dif
+
+----
+
 # JavaScriptのtips紹介
 
 ## Promiseとasync await
@@ -752,6 +792,26 @@ ECMAScript2017で追加された async / await使うとこうできる
     }
 })();
 ```
+
+----
+
+# Promiseと async / await
+
+## チャレンジしてみよう
+
+branch切ってPR出してください
+
+[]()
+
+----
+
+# Promise
+
+おすすめ文献
+
+早めに終わっちゃった人は読んでみてください！
+
+https://dev.to/lydiahallie/javascript-visualized-promises-async-await-5gke
 
 ----
 
@@ -844,15 +904,109 @@ const mediaStream = await navigator.mediaDevices.getUserMedia({
 
 ![](./assets/getUserMedia.png)
 
+さらにこれを許可したら自分の顔がポッと表示されるはず
+
+----
+
+# navigator.mediaDevices.getUserMedia
+
+この処理はブラウザでカメラ / マイクの許諾を取る際に絶対に必要な処理なので、紹介しました！
+
+----
+
+# JavaScriptのtipsまとめ
+
+- オブジェクト型とプリミティブ型の扱いには気をつけましょう
+- なにか画面がもっさりするなと思ったらevent loopを気にしましょう
+- 非同期処理はPromiseとasync / awaitを使っていきましょう
+
+----
+
+# さてひと休憩がてら質問タイム
+
 ----
 
 # おかし後にやるやつの準備
 
 ----
 
-# フロントエンド講義
+# おかし後にやるやつの準備
 
-おかし後は実際に1on1で音声通話出来るサービス作っていくよ
+おかし後は実際に1on1で音声通話出来るサービス作っていきます
+
+フロントエンドのみで構築していくので、色々世に公開されているサービスを使っていきたいと思います
+
+----
+
+# おかし後にやるやつの準備
+
+## 使うサービス
+
+- Skyway
+- エディターでVisual Studio Code
+    - 正直エディターはお好きなやつ使ってくれていいんだけど、Live Serverという拡張機能を使いたい
+
+----
+
+![bg](https://webrtc.ecl.ntt.com/img/ogp/skyway-ogp.png)
+
+----
+
+# Skyway
+
+- ビデオ通話、音声通話を簡単にサービスに導入できるSDK
+    - すごい簡単
+
+https://webrtc.ecl.ntt.com/
+
+----
+
+# Skyway
+
+無料でアカウント作れるので、一緒に作っていきたいと思います
+
+困った段階で手を止めるので、ぜひ声出してください！
+
+----
+
+![bg 90%](./assets/skyway-signup.png)
+
+----
+
+![bg 90%](./assets/skyway-signup-success.png)
+
+----
+
+![bg 90%](./assets/skyway-console.png)
+
+----
+
+![bg 60%](./assets/skyway-new-application.png)
+
+----
+
+![bg 100%](./assets/skyway-application.png)
+
+----
+
+# Skyway
+
+これでSkywayの準備は万端
+
+次にVisual Studio CodeのLive Serverを用意していきます
+
+----
+
+# Visual Studio CodeのLive Server
+
+- installはこちら
+    - https://code.visualstudio.com/
+- installできたらLive Serverをinstallします
+    - https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
+
+----
+
+# これでおかし後の準備は万端になります！
 
 ----
 
@@ -861,11 +1015,28 @@ const mediaStream = await navigator.mediaDevices.getUserMedia({
 改めておかし後にやること
 
 - SkyWayを使ってハンズオン
+    - 一緒にドキュメント読みながら開発してみよう
 - +αでサービスを強化してみよう
+    - 自分オリジナルなモノを作ってみよう
+    - Zoomの部屋を分けるので、同じ部屋の人たちと相談しながら進めてみよう
 
 ----
 
 # SkyWayを使ってハンズオン
+
+一緒にドキュメントを読みながら進めていこういきます
+
+----
+
+# SkyWayを使ってハンズオン
+
+## やること
+
+- repository用意してみよう
+    - GitHub Pagesに上げると本番で確認できるよ
+- 実際にSkywayのドキュメント読みながらローカルで開発していきます
+- repositoryにpushしてGitHub Pagesで確認してみよう
+    - 実際にペアになってやってみよう
 
 ----
 
@@ -873,6 +1044,23 @@ const mediaStream = await navigator.mediaDevices.getUserMedia({
 
 ----
 
+# +αでサービスを強化してみよう
+
+- Skywayのテキストチャットの実装サンプルがあるので、それを実装してみよう
+    - 音声チャットしながらテキストチャットするのって今じゃ当たり前じゃない？
+- 何かFramework使ってみよう
+    - React / Vue.js / Angularなどなど
+- TypeScript使ってみよう
+    - 環境構築は大変だけど、使ってみるとすごい楽しいよ
+
+----
+
 # フロントエンド講義まとめ
+
+- JavaScriptはすぐに手元で確認できるので、とてもいい言語！
+- 困ったときはドキュメントを読めば大体解決できる！
+    - 自分で探して解決できると自信が深まる！
+    - でも講師陣やら先輩に助け求めて一緒に探すのも楽しいよ！
+- フロントエンドは楽しくできたけど、バックエンドはWebRTCとかサーバー介してあれこれするのでとっても難しいよ！
 
 ----
