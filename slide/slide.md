@@ -830,6 +830,7 @@ https://dev.to/lydiahallie/javascript-visualized-event-loop-3dif
     - `function`キーワードを使って定義される関数
 - allow関数
     - 矢印記号 `=>` を使って定義される関数
+    - ES6から利用可能になった構文の1つ
 - どっちも関数です
 
 ----
