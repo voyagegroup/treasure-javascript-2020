@@ -632,7 +632,7 @@ console.log(foo.bar); // ???
 
 branch切ってPR出してください
 
-[]()
+https://github.com/voyagegroup/treasure-javascript-2020/tree/master/practice/primitive-object
 
 ----
 
@@ -726,7 +726,7 @@ branch切ってPR出してください
 
 branch切ってPR出してください
 
-[]()
+https://github.com/voyagegroup/treasure-javascript-2020/tree/master/practice/event-loop
 
 ----
 
@@ -817,7 +817,7 @@ ECMAScript2017で追加された async / await使うとこうできる
 
 branch切ってPR出してください
 
-[]()
+https://github.com/voyagegroup/treasure-javascript-2020/tree/master/practice/promise
 
 ----
 
@@ -877,6 +877,8 @@ const mediaStream = await navigator.mediaDevices.getUserMedia({
 # navigator.mediaDevices.getUserMedia
 
 ## 実際に使ってみよう
+
+https://github.com/voyagegroup/treasure-javascript-2020/tree/master/practice/get-user-media
 
 ----
 
