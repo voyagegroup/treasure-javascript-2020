@@ -977,7 +977,6 @@ https://github.com/voyagegroup/treasure-javascript-2020/tree/master/practice/get
 - Skyway
 - エディターでVisual Studio Code
     - 正直エディターはお好きなやつ使ってくれていいんだけど、Live Serverという拡張機能を使いたい
-- GitHub Pages使って外に公開するための準備
 
 ----
 
@@ -1039,18 +1038,6 @@ https://webrtc.ecl.ntt.com/
 
 ----
 
-# GitHub Pages使って外に公開するための準備
-
-このrepositoryをcloseしてください
-
-https://github.com/voyagegroup/treasure-javascript-2020-skyway
-
-----
-
-![bg 90%](./assets/github-pages.png)
-
-----
-
 # これでおかし後の準備は万端になります！
 
 ----
@@ -1082,6 +1069,18 @@ https://github.com/voyagegroup/treasure-javascript-2020-skyway
 - 実際にSkywayのドキュメント読みながらローカルで開発していきます
 - repositoryにpushしてGitHub Pagesで確認してみよう
     - 実際にペアになってやってみよう
+
+----
+
+# GitHub Pages使って外に公開するための準備
+
+このrepositoryをcloseしてください
+
+https://github.com/voyagegroup/treasure-javascript-2020-skyway
+
+----
+
+![bg 90%](./assets/github-pages.png)
 
 ----
 
