@@ -1,31 +1,34 @@
 function doAsyncTask1(successHandler, failureHandler) {
-    setTimeout(function() {
+}
+
+const doAsyncTask1 = (successHandler, failureHandler) => {
+    setTimeout(() => {
         successHandler("doAsyncTask1")
     }, 1000);
 }
 
-function doAsyncTask2(value, successHandler, failureHandler) {
+const doAsyncTask2 = (value, successHandler, failureHandler) => {
     console.log('doAsyncTask2 value: ' + value);
-    setTimeout(function() {
+    setTimeout(() => {
         successHandler("doAsyncTask2")
     }, 1000);
 }
 
-function doAsyncTask3(value, successHandler, failureHandler) {
+const doAsyncTask3 = (value, successHandler, failureHandler) => {
     console.log('doAsyncTask3 value: ' + value);
-    setTimeout(function() {
+    setTimeout(() => {
         successHandler("doAsyncTask3")
     }, 1000);
 }
 
-function failureHandler(error) {
+const failureHandler = (error) => {
     console.log("error: " + error);
 }
 
 (function() {
-    doAsyncTask1(function(result) {
-        doAsyncTask2(result, function(newResult) {
-            doAsyncTask3(newResult, function(finalResult) {
+    doAsyncTask1((result) => {
+        doAsyncTask2(result, (newResult) => {
+            doAsyncTask3(newResult, (finalResult) => {
                 console.log('final result: ' + finalResult);
             }, failureHandler);
         }, failureHandler);

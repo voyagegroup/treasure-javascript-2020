@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <title>regular function & allow</title>
+</head>
+<body>
+    <h1>Hello Treasure !!!</h1>
+    <script>
+        const obj = {
+            name: 'ryokosuge',
+            gender: 'male',
+            callGender: function(){
+                setTimeout(function() {
+                    console.log("gender:    " + this.gender);
+                });
+            },
+            callName: function(){
+                console.log("name:  " + this.name);
+            }
+        }
+        obj.callGender();
+        obj.callName();
+    </script>
+</body>
+</html>

@@ -1,6 +1,14 @@
-## 環境
+```
+$ open index.html
+```
+
+するとブラウザのconsoleから以下が出力される
 
 ```
-$ node -v
-v12.18.2
+name:  ryokosuge
+gender:    undefined
 ```
+
+## 課題
+
+`gender`がしっかり出力されるようにしてください。

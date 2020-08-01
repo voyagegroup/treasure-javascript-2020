@@ -752,6 +752,131 @@ https://dev.to/lydiahallie/javascript-visualized-event-loop-3dif
 
 # JavaScriptのtips紹介
 
+## function関数とallow関数
+
+----
+
+<!-- _class: default -->
+
+# function関数とallow関数
+
+```html
+<script>
+    function regular() {
+        return this;
+    }
+    console.log(regular() === window); // true
+
+    const allow = () => {
+        return this;
+    }
+    console.log(allow() === window); // true
+
+    const obj = {
+        regular: regular,
+        allow: allow
+    }
+    console.log(obj.regular() === obj); // ???
+    console.log(obj.allow() === obj); // ???
+</script>
+```
+
+----
+
+# function関数とallow関数
+
+- function関数
+    - `function`キーワードを使って定義される関数
+- allow関数
+    - 矢印記号 `=>` を使って定義される関数
+- どっちも関数です
+
+----
+
+# function関数とallow関数
+
+- もうちょっとallow関数を。。
+    - allow関数はES16(ES2015)で導入された比較的新しいやつ
+- `function() {}`よりも短くかける
+
+----
+
+# function関数とallow関数
+
+## function関数とallow関数が大きく違うところ
+
+----
+
+# function関数とallow関数
+
+- `this`の束縛が違う
+    - function関数
+        - **実行時** 
+    - allow関数
+        - **定義したとき**
+
+----
+
+<!-- _class: default -->
+
+# function関数とallow関数
+
+```html
+<script>
+    function regular() {
+        return this;
+    }
+    console.log(regular() === window); // true
+
+    const allow = () => {
+        return this;
+    }
+    console.log(allow() === window); // true
+
+    const obj = {
+        regular: regular,
+        allow: allow
+    }
+    console.log(obj.regular() === obj); // true
+    console.log(obj.allow() === obj); // false
+</script>
+```
+
+----
+
+<!-- _class: default -->
+
+```html
+<script>
+this.name = "foo";
+const obj = {
+    name: "bar",
+    function: function() {
+        console.log("[function] this.name: " + this.name);
+    },
+    allow: () => {
+        console.log("[allow] this.name: " + this.name);
+    }
+}
+obj.function() // name = ???
+obj.allow() // name = ???
+</script>
+```
+
+----
+
+# function関数とallow関数
+
+## チャレンジしてみよう
+
+branch切ってPR出してください
+
+https://github.com/voyagegroup/treasure-javascript-2020/tree/master/practice/allow
+
+----
+
+# JavaScriptのtips紹介
+
 ## Promiseとasync await
 
 ----
@@ -773,13 +898,13 @@ https://dev.to/lydiahallie/javascript-visualized-event-loop-3dif
 こんなのダサいよね
 
 ```js
-doAsyncTask1(function(result) {
-    doAsyncTask2(result, function(newResult) {
-        doAsyncTask3(newResult, function(finalResult) {
+doAsyncTask1((result) => {
+    doAsyncTask2(result, (newResult) => {
+        doAsyncTask3(newResult, (finalResult) => {
             console.log('final result: ' + finalResult);
-        }, failureTask);
-    }, failureTask);
-}, failureTask);
+        }, failureHandler);
+    }, failureHandler);
+}, failureHandler);
 ```
 
 ----
@@ -791,11 +916,11 @@ doAsyncTask1(function(result) {
 こうできる
 
 ```js
-doAsyncTask1().then(function(result) => {
+doAsyncTask1().then((result) => {
     return doAsyncTask2(result);
-}).then(function(newResult) => {
+}).then((newResult) => {
     return doAsyncTask3(newResult);
-}).then(function(finalResult) {
+}).then((finalResult) => {
     console.log('final result: ' + finalResult);
 }).catch(failureTask);
 ```
