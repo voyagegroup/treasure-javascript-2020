@@ -127,6 +127,14 @@ Discordみたいなやつ
 
 ----
 
+# 講義全体の流れ
+
+今日の資料はこちら
+
+https://voyagegroup.github.io/treasure-javascript-2020/
+
+----
+
 # タイムテーブル
 
 ざっくり今日の講義の流れの紹介
