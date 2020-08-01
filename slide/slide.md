@@ -535,6 +535,8 @@ JavaScriptは色々と不思議な動きをする言語なので
 
 ----
 
+<!-- _class: default -->
+
 # プリミティブ型
 
 ```js
@@ -573,6 +575,8 @@ console.log(bar);   // ???
 
 ----
 
+<!-- _class: default -->
+
 # プリミティブ型
 
 ## つまり
@@ -592,6 +596,8 @@ new String(bar).toUpperCase(); // メソッド
 ```
 
 ----
+
+<!-- _class: default -->
 
 # オブジェクト型
 
@@ -650,6 +656,8 @@ branch切ってPR出してください
 
 # event loop
 
+<!-- _class: default -->
+
 ```html
 <!DOCTYPE html>
 <head>
@@ -680,6 +688,8 @@ branch切ってPR出してください
 - これを避けるためにタスクを分割して回避していきましょう
 
 ----
+
+<!-- _class: default -->
 
 # event loop
 
@@ -744,6 +754,8 @@ https://dev.to/lydiahallie/javascript-visualized-event-loop-3dif
 
 ----
 
+<!-- _class: default -->
+
 # Promise
 
 こんなのダサいよね
@@ -760,6 +772,8 @@ doAsyncTask1(function(result) {
 
 ----
 
+<!-- _class: default -->
+
 # Promise
 
 こうできる
@@ -775,6 +789,8 @@ doAsyncTask1().then(function(result) => {
 ```
 
 ----
+
+<!-- _class: default -->
 
 # Promiseと async / await
 
@@ -834,6 +850,8 @@ https://dev.to/lydiahallie/javascript-visualized-promises-async-await-5gke
 
 ----
 
+<!-- _class: default -->
+
 # navigator.mediaDevices.getUserMedia
 
 audioとvideoを指定する場合
@@ -862,6 +880,8 @@ const mediaStream = await navigator.mediaDevices.getUserMedia({
 
 ----
 
+<!-- _class: default -->
+
 # navigator.mediaDevices.getUserMedia
 
 ## 実際に使ってみよう
@@ -883,6 +903,8 @@ const mediaStream = await navigator.mediaDevices.getUserMedia({
 ```
 
 ----
+
+<!-- _class: default -->
 
 # navigator.mediaDevices.getUserMedia
 
