@@ -20,6 +20,8 @@ footer: Treasure JavaScript 2020
 
 - 名前
     - 小菅 諒 (コスゲ リョウ)
+    - VGだとこっすーって呼ばれてるよ
+    - slackは@ryokosuge
 - 年齢
     - 30歳 (1990/02/12 )
 - 所属
@@ -27,6 +29,8 @@ footer: Treasure JavaScript 2020
 - 開発担当
     - FluctSDK
         - iOS / Androidアプリでfluctの広告表示させるためのやつ
+
+![bg right:30% 80%](./assets/icon_kosuge.png)
 
 ----
 
