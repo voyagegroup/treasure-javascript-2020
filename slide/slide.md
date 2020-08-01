@@ -490,7 +490,7 @@ JavaScriptを触ってみよう
 - JavaScriptのtips紹介
     - プリミティブ型とオブジェクト型
     - event loop
-    - function関数とallow関数
+    - function関数とarrow関数
     - Promise と async await
     - navigator.mediaDevices.getUserMedia
 - おかし後にやるやつの準備
@@ -537,7 +537,7 @@ https://caniuse.com
 
 - プリミティブ型とオブジェクト型
 - event loop
-- function関数とallow関数
+- function関数とarrow関数
 - Promise と async await
 - navigator.mediaDevices.getUserMedia
 
@@ -793,13 +793,13 @@ https://dev.to/lydiahallie/javascript-visualized-event-loop-3dif
 
 # JavaScriptのtips紹介
 
-## function関数とallow関数
+## function関数とarrow関数
 
 ----
 
 <!-- _class: default -->
 
-# function関数とallow関数
+# function関数とarrow関数
 
 ```html
 <script>
@@ -808,60 +808,60 @@ https://dev.to/lydiahallie/javascript-visualized-event-loop-3dif
     }
     console.log(regular() === window); // true
 
-    const allow = () => {
+    const arrow = () => {
         return this;
     }
-    console.log(allow() === window); // true
+    console.log(arrow() === window); // true
 
     const obj = {
         regular: regular,
-        allow: allow
+        arrow: arrow
     }
     console.log(obj.regular() === obj); // ???
-    console.log(obj.allow() === obj); // ???
+    console.log(obj.arrow() === obj); // ???
 </script>
 ```
 
 ----
 
-# function関数とallow関数
+# function関数とarrow関数
 
 - function関数
     - `function`キーワードを使って定義される関数
-- allow関数
+- arrow関数
     - 矢印記号 `=>` を使って定義される関数
     - ES6から利用可能になった構文の1つ
 - どっちも関数です
 
 ----
 
-# function関数とallow関数
+# function関数とarrow関数
 
-- もうちょっとallow関数を。。
-    - allow関数はES16(ES2015)で導入された比較的新しいやつ
+- もうちょっとarrow関数を。。
+    - arrow関数はES16(ES2015)で導入された比較的新しいやつ
 - `function() {}`よりも短くかける
 
 ----
 
-# function関数とallow関数
+# function関数とarrow関数
 
-## function関数とallow関数が大きく違うところ
+## function関数とarrow関数が大きく違うところ
 
 ----
 
-# function関数とallow関数
+# function関数とarrow関数
 
 - `this`の束縛が違う
     - function関数
         - **実行時** 
-    - allow関数
+    - arrow関数
         - **定義したとき**
 
 ----
 
 <!-- _class: default -->
 
-# function関数とallow関数
+# function関数とarrow関数
 
 ```html
 <script>
@@ -870,17 +870,17 @@ https://dev.to/lydiahallie/javascript-visualized-event-loop-3dif
     }
     console.log(regular() === window); // true
 
-    const allow = () => {
+    const arrow = () => {
         return this;
     }
-    console.log(allow() === window); // true
+    console.log(arrow() === window); // true
 
     const obj = {
         regular: regular,
-        allow: allow
+        arrow: arrow
     }
     console.log(obj.regular() === obj); // true
-    console.log(obj.allow() === obj); // false
+    console.log(obj.arrow() === obj); // false
 </script>
 ```
 
@@ -896,24 +896,24 @@ const obj = {
     function: function() {
         console.log("[function] this.name: " + this.name);
     },
-    allow: () => {
-        console.log("[allow] this.name: " + this.name);
+    arrow: () => {
+        console.log("[arrow] this.name: " + this.name);
     }
 }
 obj.function() // name = ???
-obj.allow() // name = ???
+obj.arrow() // name = ???
 </script>
 ```
 
 ----
 
-# function関数とallow関数
+# function関数とarrow関数
 
 ## チャレンジしてみよう
 
 branch切ってPR出してください
 
-https://github.com/voyagegroup/treasure-javascript-2020/tree/master/practice/allow
+https://github.com/voyagegroup/treasure-javascript-2020/tree/master/practice/arrow
 
 ----
 
