@@ -280,7 +280,7 @@ JavaScriptを触ってみよう
 
 - 第3版までは順調だった
 - 第4版あたりで各ベンダーで意見が異なり始める
-    - 第4版を認める **Mozilla(元Netscape社)** と認めない **MicroSoft**
+    - 第4版を認める **Mozilla(元Netscape社)** と認めない **Microsoft**
 
 ![bg right:40% 80%](https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE3fjPH?ver=aa35&q=90&m=6&h=195&w=348&b=%23FFFFFFFF&l=f&o=t&aim=true)
 
