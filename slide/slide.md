@@ -490,6 +490,7 @@ JavaScriptを触ってみよう
 - JavaScriptのtips紹介
     - プリミティブ型とオブジェクト型
     - event loop
+    - function関数とallow関数
     - Promise と async await
     - navigator.mediaDevices.getUserMedia
 - おかし後にやるやつの準備
@@ -498,7 +499,47 @@ JavaScriptを触ってみよう
 
 ----
 
+# フロントエンド講義
+
+その前に...
+
+----
+
+# フロントエンド講義
+
+午前中に話した **ECMAScript** 覚えてますか？
+
+----
+
+# フロントエンド講義
+
+今回の講義中に出てくるツール群
+
+- Google Chrome (84.0.4147.105)
+- Visual Studio Code
+
+----
+
+# フロントエンド講義
+
+Google Chromeの最新版を使っていれば動く
+
+使おうとしている機能が果たして使えるか
+（ブラウザがサポートしているかは）
+
+https://caniuse.com
+
+をみて見てください
+
+----
+
 # JavaScriptのtips紹介
+
+- プリミティブ型とオブジェクト型
+- event loop
+- function関数とallow関数
+- Promise と async await
+- navigator.mediaDevices.getUserMedia
 
 ----
 
