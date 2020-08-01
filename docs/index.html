@@ -542,7 +542,7 @@
 <ul>
 <li>プリミティブ型とオブジェクト型</li>
 <li>event loop</li>
-<li>function関数とallow関数</li>
+<li>function関数とarrow関数</li>
 <li>Promise と async await</li>
 <li>navigator.mediaDevices.getUserMedia</li>
 </ul>
@@ -589,7 +589,7 @@
 <ul>
 <li>プリミティブ型とオブジェクト型</li>
 <li>event loop</li>
-<li>function関数とallow関数</li>
+<li>function関数とarrow関数</li>
 <li>Promise と async await</li>
 <li>navigator.mediaDevices.getUserMedia</li>
 </ul>
@@ -840,41 +840,41 @@ bar.bar = <span class="hljs-string">&#x27;hoge&#x27;</span>;
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="79" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="79" data-marpit-pagination-total="129" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
 <h1>JavaScriptのtips紹介</h1>
-<h2>function関数とallow関数</h2>
+<h2>function関数とarrow関数</h2>
 <footer>Treasure JavaScript 2020</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="80" data-class="default" data-paginate="true" data-footer="Treasure JavaScript 2020" class="default" data-marpit-pagination="80" data-marpit-pagination-total="129" style="--class:default;--paginate:true;--footer:Treasure JavaScript 2020;">
-<h1>function関数とallow関数</h1>
+<h1>function関数とarrow関数</h1>
 <pre><code class="language-html"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
     <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">regular</span>(<span class="hljs-params"></span>) </span>{
         <span class="hljs-keyword">return</span> <span class="hljs-built_in">this</span>;
     }
     <span class="hljs-built_in">console</span>.log(regular() === <span class="hljs-built_in">window</span>); <span class="hljs-comment">// true</span>
 
-    <span class="hljs-keyword">const</span> allow = <span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-keyword">const</span> arrow = <span class="hljs-function">() =&gt;</span> {
         <span class="hljs-keyword">return</span> <span class="hljs-built_in">this</span>;
     }
-    <span class="hljs-built_in">console</span>.log(allow() === <span class="hljs-built_in">window</span>); <span class="hljs-comment">// true</span>
+    <span class="hljs-built_in">console</span>.log(arrow() === <span class="hljs-built_in">window</span>); <span class="hljs-comment">// true</span>
 
     <span class="hljs-keyword">const</span> obj = {
         <span class="hljs-attr">regular</span>: regular,
-        <span class="hljs-attr">allow</span>: allow
+        <span class="hljs-attr">arrow</span>: arrow
     }
     <span class="hljs-built_in">console</span>.log(obj.regular() === obj); <span class="hljs-comment">// ???</span>
-    <span class="hljs-built_in">console</span>.log(obj.allow() === obj); <span class="hljs-comment">// ???</span>
+    <span class="hljs-built_in">console</span>.log(obj.arrow() === obj); <span class="hljs-comment">// ???</span>
 </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 </span></span></foreignObject></svg></code></pre>
 <footer>Treasure JavaScript 2020</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="81" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="81" data-marpit-pagination-total="129" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
-<h1>function関数とallow関数</h1>
+<h1>function関数とarrow関数</h1>
 <ul>
 <li>function関数
 <ul>
 <li><code>function</code>キーワードを使って定義される関数</li>
 </ul>
 </li>
-<li>allow関数
+<li>arrow関数
 <ul>
 <li>矢印記号 <code>=&gt;</code> を使って定義される関数</li>
 <li>ES6から利用可能になった構文の1つ</li>
@@ -885,11 +885,11 @@ bar.bar = <span class="hljs-string">&#x27;hoge&#x27;</span>;
 <footer>Treasure JavaScript 2020</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="82" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="82" data-marpit-pagination-total="129" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
-<h1>function関数とallow関数</h1>
+<h1>function関数とarrow関数</h1>
 <ul>
-<li>もうちょっとallow関数を。。
+<li>もうちょっとarrow関数を。。
 <ul>
-<li>allow関数はES16(ES2015)で導入された比較的新しいやつ</li>
+<li>arrow関数はES16(ES2015)で導入された比較的新しいやつ</li>
 </ul>
 </li>
 <li><code>function() {}</code>よりも短くかける</li>
@@ -897,12 +897,12 @@ bar.bar = <span class="hljs-string">&#x27;hoge&#x27;</span>;
 <footer>Treasure JavaScript 2020</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="83" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="83" data-marpit-pagination-total="129" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
-<h1>function関数とallow関数</h1>
-<h2>function関数とallow関数が大きく違うところ</h2>
+<h1>function関数とarrow関数</h1>
+<h2>function関数とarrow関数が大きく違うところ</h2>
 <footer>Treasure JavaScript 2020</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="84" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="84" data-marpit-pagination-total="129" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
-<h1>function関数とallow関数</h1>
+<h1>function関数とarrow関数</h1>
 <ul>
 <li><code>this</code>の束縛が違う
 <ul>
@@ -911,7 +911,7 @@ bar.bar = <span class="hljs-string">&#x27;hoge&#x27;</span>;
 <li><strong>実行時</strong></li>
 </ul>
 </li>
-<li>allow関数
+<li>arrow関数
 <ul>
 <li><strong>定義したとき</strong></li>
 </ul>
@@ -922,24 +922,24 @@ bar.bar = <span class="hljs-string">&#x27;hoge&#x27;</span>;
 <footer>Treasure JavaScript 2020</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="85" data-class="default" data-paginate="true" data-footer="Treasure JavaScript 2020" class="default" data-marpit-pagination="85" data-marpit-pagination-total="129" style="--class:default;--paginate:true;--footer:Treasure JavaScript 2020;">
-<h1>function関数とallow関数</h1>
+<h1>function関数とarrow関数</h1>
 <pre><code class="language-html"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
     <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">regular</span>(<span class="hljs-params"></span>) </span>{
         <span class="hljs-keyword">return</span> <span class="hljs-built_in">this</span>;
     }
     <span class="hljs-built_in">console</span>.log(regular() === <span class="hljs-built_in">window</span>); <span class="hljs-comment">// true</span>
 
-    <span class="hljs-keyword">const</span> allow = <span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-keyword">const</span> arrow = <span class="hljs-function">() =&gt;</span> {
         <span class="hljs-keyword">return</span> <span class="hljs-built_in">this</span>;
     }
-    <span class="hljs-built_in">console</span>.log(allow() === <span class="hljs-built_in">window</span>); <span class="hljs-comment">// true</span>
+    <span class="hljs-built_in">console</span>.log(arrow() === <span class="hljs-built_in">window</span>); <span class="hljs-comment">// true</span>
 
     <span class="hljs-keyword">const</span> obj = {
         <span class="hljs-attr">regular</span>: regular,
-        <span class="hljs-attr">allow</span>: allow
+        <span class="hljs-attr">arrow</span>: arrow
     }
     <span class="hljs-built_in">console</span>.log(obj.regular() === obj); <span class="hljs-comment">// true</span>
-    <span class="hljs-built_in">console</span>.log(obj.allow() === obj); <span class="hljs-comment">// false</span>
+    <span class="hljs-built_in">console</span>.log(obj.arrow() === obj); <span class="hljs-comment">// false</span>
 </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 </span></span></foreignObject></svg></code></pre>
 <footer>Treasure JavaScript 2020</footer>
@@ -951,21 +951,21 @@ bar.bar = <span class="hljs-string">&#x27;hoge&#x27;</span>;
     <span class="hljs-attr">function</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
         <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;[function] this.name: &quot;</span> + <span class="hljs-built_in">this</span>.name);
     },
-    <span class="hljs-attr">allow</span>: <span class="hljs-function">() =&gt;</span> {
-        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;[allow] this.name: &quot;</span> + <span class="hljs-built_in">this</span>.name);
+    <span class="hljs-attr">arrow</span>: <span class="hljs-function">() =&gt;</span> {
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;[arrow] this.name: &quot;</span> + <span class="hljs-built_in">this</span>.name);
     }
 }
 obj.function() <span class="hljs-comment">// name = ???</span>
-obj.allow() <span class="hljs-comment">// name = ???</span>
+obj.arrow() <span class="hljs-comment">// name = ???</span>
 </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 </span></span></foreignObject></svg></code></pre>
 <footer>Treasure JavaScript 2020</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="87" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="87" data-marpit-pagination-total="129" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
-<h1>function関数とallow関数</h1>
+<h1>function関数とarrow関数</h1>
 <h2>チャレンジしてみよう</h2>
 <p>branch切ってPR出してください</p>
-<p><a href="https://github.com/voyagegroup/treasure-javascript-2020/tree/master/practice/allow">https://github.com/voyagegroup/treasure-javascript-2020/tree/master/practice/allow</a></p>
+<p><a href="https://github.com/voyagegroup/treasure-javascript-2020/tree/master/practice/arrow">https://github.com/voyagegroup/treasure-javascript-2020/tree/master/practice/arrow</a></p>
 <footer>Treasure JavaScript 2020</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="88" data-class="invert" data-paginate="true" data-footer="Treasure JavaScript 2020" class="invert" data-marpit-pagination="88" data-marpit-pagination-total="129" style="--class:invert;--paginate:true;--footer:Treasure JavaScript 2020;">
